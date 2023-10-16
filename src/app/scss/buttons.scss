@@ -1,0 +1,7 @@
+@import "./variables.scss";
+
+.btn {
+  border-radius: $border-radius;
+  border: none;
+  padding: $normal-padding;
+}

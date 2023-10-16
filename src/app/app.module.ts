@@ -12,6 +12,11 @@ import { Page404Component } from './pages/page404/page404.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { httpInterceptorProviders } from './shared/interceptors';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,11 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     LoginComponent,
     Page404Component,
+    ContactComponent,
+    AboutUsComponent,
+    ServicesComponent,
+    GalleryComponent,
+    ContactFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [AuthGuard, httpInterceptorProviders],
