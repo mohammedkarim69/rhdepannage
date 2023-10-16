@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Menu } from 'src/app/shared/interfaces/Menu';
+import { NAVBAR_MENU } from 'src/app/shared/variables';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  navbar : Menu[]= NAVBAR_MENU
 
 }

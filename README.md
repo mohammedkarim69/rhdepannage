@@ -21,3 +21,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Font-Awesome 
+Phone : <i class="fa-solid fa-phone"></i>
+Map : <i class="fa-solid fa-location-dot"></i>
+Email : <i class="fa-solid fa-envelope"></i>
+Horaire : <i class="fa-solid fa-clock"></i>
+Menu burger : <i class="fa-solid fa-bars"></i>
+Croix fermer : <i class="fa-solid fa-circle-xmark"></i>

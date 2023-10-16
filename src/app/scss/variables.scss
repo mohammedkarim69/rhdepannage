@@ -1,0 +1,19 @@
+// ----- color -----
+/* TODO : A DEFINIR AVEC LE FIGMA 
+*  et définir ce qu'on veut
+*/
+$white: #ffffff;
+$black: #000000;
+$yellow: rgba(255, 255, 0, 0.897);
+
+// ----- padding ----- 
+$normal-padding: 8px;
+$double-padding: 2 * $normal-padding;
+$triple-padding: 3 * $normal-padding;
+$four-padding: 4 * $normal-padding;
+$half-padding: calc($normal-padding / 2);
+
+// ----- border radius -----
+$border-radius : 8px;
+$half_openBorderRadius: 4px;
+$double-border-radius : 16px;

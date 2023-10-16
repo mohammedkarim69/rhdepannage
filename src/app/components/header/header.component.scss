@@ -1,0 +1,17 @@
+@import "../../scss/variables.scss";
+
+nav{
+  background-color: $black;
+  color: $yellow;
+  padding: $double-padding;
+  ul{
+    li{
+      font-size: large;
+
+    }
+  }
+  .round{
+    border-radius: 25px;
+    border : 4px solid $yellow
+  }
+}
