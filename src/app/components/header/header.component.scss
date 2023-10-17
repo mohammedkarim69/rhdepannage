@@ -3,8 +3,10 @@
 .main-container {
   display: flex;
   background-color: $black;
-  height: 10vh;
+  height: 11vh;
   align-items: center;
+  border: none;
+  
 }
 .container {
   display: flex;
@@ -37,6 +39,7 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
+  align-content: space-around ;
   text-align: center;
   backdrop-filter: blur(10px);
   position: fixed;
@@ -59,16 +62,21 @@
 .navbarmobile {
   display: block;
 }
-.navbarmobile ul {
-  height: 100%;
+
+.mainmenu  {
+  display:flex ;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:$black;
+  border: none;
 }
+
 .mainmenu li {
   display: block;
-  background-color: grey;
   text-decoration: none;
   padding: 30px;
-  height: 10vh;
-  background-color: $black;
+  height: 11vh;
   color:$yellow ;
   transition: 0.5s;  
 }
@@ -96,13 +104,13 @@
   }
 
   .logo {
-    height: 15vh;
+    height: 4vh;
   }
 
-  .logo img {
-    height: 100%;
-    width: 100%;
-  }
+  // .logo img {
+  //   height: 100%;
+  //   width: 100%;
+  // }
 
   .navdesktop {
     display: flex;
@@ -115,11 +123,12 @@
     flex-direction: row;
     width: 80vw;
     justify-content: space-around;
+    font-size: 1.1rem;
   }
   .mainmenus li {
     color: white;
     transition: 0.5s;
-    font-size: x-large;
+    
   }
 
   .mainmenus li:hover  {
@@ -133,4 +142,10 @@
     justify-content: space-between;
   }
  
+}
+
+@media screen and (min-width: 900px){
+
+
+
 }
