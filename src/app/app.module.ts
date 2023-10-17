@@ -17,6 +17,9 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     GalleryComponent,
     ContactFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule,MatIconModule, MatMenuModule],
   providers: [AuthGuard, httpInterceptorProviders],
   bootstrap: [AppComponent],
 })
