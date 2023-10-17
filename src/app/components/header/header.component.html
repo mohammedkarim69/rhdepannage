@@ -23,10 +23,10 @@
 
 <div class="main-container">
   <div class="container">
-     <div class="logo">
+    <div class="logo">
       <img src="src/assets/images/03.jpg" alt="logo" />
-    </div> 
-    <div class=" phone flex">
+    </div>
+    <div class="phone flex">
       <i class="fa-solid fa-phone"></i>
     </div>
     <div class="navbarmobile">
@@ -35,18 +35,29 @@
         (click)="toggleMenu()"
       >
       </i>
-
       <nav
         [ngClass]="
           displayMenuBurger ? 'navlistmobile invisible' : 'navlistmobile'
         "
       >
         <ul class="mainmenu">
-          <li *ngFor="let item of navbar" routerLink="{{item.routerLink}}">{{item.name}}</li>
-        
-          
+          <li *ngFor="let item of navbar" routerLink="{{ item.routerLink }}">
+            {{ item.name }}
+          </li>
         </ul>
       </nav>
     </div>
   </div>
-</div>
+
+   <nav class="navdesktop">
+      <div class="ok">
+      <ul class="mainmenus">
+       <li  *ngFor="let item of navbar" routerLink="{{ item.routerLink }}">
+        {{ item.name }}
+      </li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+  
+
