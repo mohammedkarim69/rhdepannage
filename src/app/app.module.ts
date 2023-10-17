@@ -17,6 +17,8 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeadbandBlackYellowComponent } from './components/headband-black-yellow/headband-black-yellow.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +34,9 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     ServicesComponent,
     GalleryComponent,
     ContactFormComponent,
+    HeadbandBlackYellowComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
   providers: [AuthGuard, httpInterceptorProviders],
   bootstrap: [AppComponent],
 })
