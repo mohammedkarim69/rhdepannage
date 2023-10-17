@@ -1,0 +1,31 @@
+@import "../../scss/variables.scss";
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  width: 100vw;
+  background-color: $black;
+  color: $white;
+  flex-wrap: wrap;
+  padding : $double-padding;
+  .half-width {
+    width: 50vw;
+  }
+  section {
+    h6 {
+      padding-bottom: $normal-padding;
+      font-size: $double-font-size;
+      color: $yellow;
+    }
+  }
+  a {
+    color: $white;
+    padding-bottom: $normal-padding;
+
+  }
+}
+i {
+  font-size: $double-font-size;
+  color: $yellow;
+  width : $triple-padding
+}
