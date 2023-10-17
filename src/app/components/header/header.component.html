@@ -1,4 +1,4 @@
-<nav  class="flex space-around">
+<!-- <nav  class="flex space-around">
   <ul class="flex space-around">
     <li
       class="pointer flex center"
@@ -8,5 +8,45 @@
       <p>{{ item.name }}</p>
     </li>
   </ul>
+
   <i class="fa-solid fa-phone round"></i>
-</nav>
+  <i class="fa-solid fa-bars"></i>
+</nav>*/ -->
+
+<!-- <nav  class="flex">
+
+  
+  <mat-icon >phone</mat-icon>
+  <mat-icon >menu</mat-icon>
+  
+</nav> -->
+
+<div class="main-container">
+  <div class="container">
+     <div class="logo">
+      <img src="src/assets/images/03.jpg" alt="logo" />
+    </div> 
+    <div class=" phone flex">
+      <i class="fa-solid fa-phone"></i>
+    </div>
+    <div class="navbarmobile">
+      <i
+        [ngClass]="displayMenuBurger ? 'fa-solid fa-x' : ' fa-solid fa-bars'"
+        (click)="toggleMenu()"
+      >
+      </i>
+
+      <nav
+        [ngClass]="
+          displayMenuBurger ? 'navlistmobile invisible' : 'navlistmobile'
+        "
+      >
+        <ul class="mainmenu">
+          <li *ngFor="let item of navbar" routerLink="{{item.routerLink}}">{{item.name}}</li>
+        
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,17 +1,108 @@
 @import "../../scss/variables.scss";
 
-nav{
-  background-color: $black;
-  color: $yellow;
-  padding: $double-padding;
-  ul{
-    li{
-      font-size: large;
+// nav{
+//   background-color: $black;
+//   color: $yellow;
+//   padding: $double-padding;
+//   justify-content: flex-end;
+//   ul{
+//     li{
+//       font-size: large;
 
-    }
-  }
-  .round{
-    border-radius: 25px;
-    border : 4px solid $yellow
-  }
+//     }
+//   }
+//   .round{
+//     border-radius: 25px;
+//     border : 4px solid $yellow
+//   }
+// }
+
+.main-container {
+  display: flex;
+  background-color: $black;
+  height: 10vh;
+  align-items: center;
+}
+.container {
+  display: flex;
+  height: 5vh;
+  width: 82vw;
+  flex-direction: row;
+  // justify-content: space-between;
+  margin: 1rem;
+}
+.fa-phone {
+  color: #cb9f61;
+  font-size: x-large;
+}
+
+.phone {
+  width: 100%;
+  justify-content: end;
+}
+
+.logo {
+  height: 8vh;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.navlistmobile {
+  margin-top: 10vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  right: -70vw;
+  width: 70%;
+  transition: right 1s;
+}
+
+.invisible {
+  right: 0vh;
+}
+
+.navbarmobile i {
+  z-index: 999;
+  font-size: x-large;
+  position: fixed;
+  top: 20px;
+  right: 15px;
+  //color: #FFD700;
+   //color:  rgb(180, 176, 58);
+   color:#cb9f61
+
+}
+.navbarmobile {
+  display: block;
+}
+.navbarmobile ul {
+  height: 100%;
+}
+
+.mainmenu li {
+  display: block;
+  background-color: grey;
+  text-decoration: none;
+  padding: 30px;
+  height: 10vh;
+  background-color: $black;
+  color:$yellow ;
+  transition: 0.5s;
+  
+}
+
+.mainmenu li:hover {
+  background-color:$yellow;
+  color:$black
+}
+
+.navdesktop {
+  display: none;
 }
