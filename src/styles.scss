@@ -220,29 +220,49 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-h1 {
-  height: 40vh;
-  color: $white; /* ou toute autre couleur de texte souhaitée */
-  font-size: $triple-font-size;
-  font-weight: bold;
-  text-shadow: 0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
-    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
-    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
-    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
-    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black;
-  z-index: 1; /* Placez-le au-dessus de l'arrière-plan flou */
-}
-
 h2 {
   font-size: $double-font-size;
-  padding : $double-padding 0;
+  padding: $double-padding 0;
+  // background-color: $yellow;
+  // color:$black
+}
+
+strong {
+  font-weight: bold;
+}
+
+p{
+  line-height: 1.2;
+}
+
+.about-us-page,
+.contact-page,
+.gallery-page,
+.home-page,
+.services-page,
+.p404-page {
+  padding: $double-padding;
 }
 
 // Breackpoint list
 // Mobiles vers Tablettes :
 @media screen and (min-width: 768px) {
-  h1{
-    font-size: $max-font-size;
+  .about-us-page,
+  .contact-page,
+  .gallery-page,
+  .home-page,
+  .services-page,
+  .p404-page {
+    padding: $four-padding;
+  }
+  h2{
+    font-size: $triple-font-size;
+    padding: $triple-padding 0;
+  }
+
+  p{
+    font-size: $double-font-size;
+    line-height: 1.2;
   }
 }
 // Point de rupture : 768 pixels de largeur
@@ -253,6 +273,14 @@ h2 {
 
 // Ordinateurs portables vers ordinateurs de bureau :
 @media screen and (min-width: 1200px) {
+  .about-us-page,
+  .contact-page,
+  .gallery-page,
+  .home-page,
+  .services-page,
+  .p404-page {
+    padding:  0 160px 80px 160px;
+  }
 }
 
 // Large Desktops (pour des écrans très larges) :

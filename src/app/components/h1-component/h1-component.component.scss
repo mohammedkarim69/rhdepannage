@@ -13,6 +13,35 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(2px);
-  opacity: 0.5;
+  filter: blur(1px) brightness(40%);
+  // opacity: 0.5;
+}
+
+h1 {
+  letter-spacing: 2px;
+  height: calc(
+    40vh - 8px
+  ); /* pour que la coupure avec la page du bas soit nette */
+  color: $white;
+  font-size: $triple-font-size;
+  font-weight: bold;
+  // text-shadow: 0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
+  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
+  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
+  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
+  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black;
+  z-index: 1; /* Placez-le au-dessus de l'arrière-plan flou */
+}
+
+@media screen and (min-width: 700px) {
+  .blur-background {
+    top: 20vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-weight: bold;
+    font-size: $max-font-size;
+  }
 }
