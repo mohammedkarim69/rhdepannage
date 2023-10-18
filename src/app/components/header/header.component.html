@@ -40,7 +40,8 @@
           displayMenuBurger ? 'navlistmobile invisible' : 'navlistmobile'
         "
       >
-        <ul class="mainmenu">
+        <ul class="mainmenu" 
+        (click)="toggleMenu()">
           <li *ngFor="let item of navbar" routerLink="{{ item.routerLink }}">
             {{ item.name }}
           </li>
@@ -59,5 +60,6 @@
     </div>
     </nav>
   </div>
+  <app-headband-black-yellow></app-headband-black-yellow>
   
 
