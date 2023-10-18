@@ -6,7 +6,8 @@
   height: 11vh;
   align-items: center;
   border: none;
-  
+  position: fixed;
+  width: 100vw;
 }
 .container {
   display: flex;
@@ -16,7 +17,7 @@
   margin: 1rem;
 }
 .fa-phone {
-  color: #cb9f61;
+  color: $yellow;
   font-size: x-large;
 }
 
@@ -39,7 +40,7 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-  align-content: space-around ;
+  align-content: space-around;
   text-align: center;
   backdrop-filter: blur(10px);
   position: fixed;
@@ -57,18 +58,18 @@
   position: fixed;
   top: 20px;
   right: 15px;
-  color:#cb9f61
+  color: $yellow;
 }
 .navbarmobile {
   display: block;
 }
 
-.mainmenu  {
-  display:flex ;
+.mainmenu {
+  display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: space-around;
-  background-color:$black;
+  background-color: $black;
   border: none;
 }
 
@@ -77,24 +78,25 @@
   text-decoration: none;
   padding: 30px;
   height: 10vh;
-  color:$yellow ;
-  transition: 0.5s;  
+  color: $yellow;
+  transition: 0.5s;
 }
 .mainmenu li:hover {
-  background-color:$yellow;
-  color:$black
+  background-color: $yellow;
+  color: $black;
 }
 .navdesktop {
   display: none;
 }
 
-
 //-------------------------media queries------------------------//
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .navbarmobile {
     display: none;
   }
-  .phone{display: none;}
+  .phone {
+    display: none;
+  }
 
   .main-container {
     display: flex;
@@ -128,24 +130,19 @@
   .mainmenus li {
     color: white;
     transition: 0.5s;
-    
   }
 
-  .mainmenus li:hover  {
+  .mainmenus li:hover {
     display: block;
     max-height: 200px;
-    color:$yellow
+    color: $yellow;
   }
 
   .ok {
     display: flex;
     justify-content: space-between;
   }
- 
 }
 
-@media screen and (min-width: 900px){
-
-
-
+@media screen and (min-width: 900px) {
 }
