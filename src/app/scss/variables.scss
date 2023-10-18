@@ -13,6 +13,13 @@ $triple-padding: 3 * $normal-padding;
 $four-padding: 4 * $normal-padding;
 $half-padding: calc($normal-padding / 2);
 
+// ----- margin ----- 
+$normal-margin: 8%;
+$double-margin: 2 * $normal-margin;
+$triple-margin: 3 * $normal-margin;
+$four-margin: 4 * $normal-margin;
+$half-margin: calc($normal-margin / 2);
+
 // ----- border radius -----
 $border-radius : 8px;
 $half_openBorderRadius: 4px;
@@ -21,3 +28,5 @@ $double-border-radius : 16px;
 // ----- border radiusfont sizeadius : 8px;
 $normal-font-size: 1rem;
 $double-font-size : 1.5 * $normal-font-size;
+$triple-font-size : 2 * $normal-font-size;
+$max-font-size : 4 * $normal-font-size;

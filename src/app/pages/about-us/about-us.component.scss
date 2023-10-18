@@ -1,0 +1,12 @@
+@import "../../scss/variables.scss";
+
+.about-us-page {
+  background-color: $white;
+  padding: $double-padding;
+  padding-top: 0;
+  p {
+    a {
+      color: $black;
+    }
+  }
+}

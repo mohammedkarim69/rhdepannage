@@ -219,3 +219,42 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+h1 {
+  height: 40vh;
+  color: $white; /* ou toute autre couleur de texte souhaitée */
+  font-size: $triple-font-size;
+  font-weight: bold;
+  text-shadow: 0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
+    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
+    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
+    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black,
+    0 0 2px $black, 0 0 2px $black, 0 0 2px $black, 0 0 2px $black;
+  z-index: 1; /* Placez-le au-dessus de l'arrière-plan flou */
+}
+
+h2 {
+  font-size: $double-font-size;
+  padding : $double-padding 0;
+}
+
+// Breackpoint list
+// Mobiles vers Tablettes :
+@media screen and (min-width: 768px) {
+  h1{
+    font-size: $max-font-size;
+  }
+}
+// Point de rupture : 768 pixels de largeur
+
+// Tablettes vers ordinateurs portables :
+@media screen and (min-width: 992px) {
+}
+
+// Ordinateurs portables vers ordinateurs de bureau :
+@media screen and (min-width: 1200px) {
+}
+
+// Large Desktops (pour des écrans très larges) :
+@media screen and (min-width: 1920px) {
+}
