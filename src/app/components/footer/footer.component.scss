@@ -7,9 +7,9 @@ footer {
   background-color: $black;
   color: $white;
   flex-wrap: wrap;
-  padding : $double-padding;
+  padding: $double-padding;
   .half-width {
-    width: 50vw;
+    width: 50%;
   }
   section {
     h6 {
@@ -21,11 +21,40 @@ footer {
   a {
     color: $white;
     padding-bottom: $normal-padding;
-
   }
 }
 i {
   font-size: $double-font-size;
   color: $yellow;
-  width : $triple-padding
+
+  width: $triple-padding;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: $triple-padding;
+    section {
+      h6 {
+        font-size: $triple-font-size;
+      }
+      .padding {
+        padding-top: $double-padding;
+      }
+    }
+  }
+  i {
+    font-size: $triple-font-size;
+    width: $triple-padding * 2;
+  }
+  li,
+  p {
+    padding-top: $normal-padding;
+    font-size: $double-font-size;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    padding : $triple-padding * 2;
+  }
 }

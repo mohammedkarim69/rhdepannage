@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
-
+  title : string = "Gallerie Photos"
 }

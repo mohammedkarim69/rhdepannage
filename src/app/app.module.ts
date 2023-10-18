@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeadbandBlackYellowComponent } from './components/headband-black-yellow/headband-black-yellow.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { H1ComponentComponent } from './components/h1-component/h1-component.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MatMenuModule } from '@angular/material/menu';
     GalleryComponent,
     ContactFormComponent,
     HeadbandBlackYellowComponent,
+    H1ComponentComponent,
   ],
   imports: [
     BrowserModule,
