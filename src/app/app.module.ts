@@ -18,8 +18,10 @@ import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
+import { HeadbandBlackYellowComponent } from './components/headband-black-yellow/headband-black-yellow.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { H1ComponentComponent } from './components/h1-component/h1-component.component';
 
 @NgModule({
   declarations: [
@@ -35,8 +37,15 @@ import {MatMenuModule} from '@angular/material/menu';
     ServicesComponent,
     GalleryComponent,
     ContactFormComponent,
+    HeadbandBlackYellowComponent,
+    H1ComponentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule,MatIconModule, MatMenuModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+  ],
   providers: [AuthGuard, httpInterceptorProviders],
   bootstrap: [AppComponent],
 })

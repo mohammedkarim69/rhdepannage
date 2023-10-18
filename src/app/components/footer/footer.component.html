@@ -1,1 +1,27 @@
-<p>footer works!</p>
+<app-headband-black-yellow></app-headband-black-yellow>
+<footer class="">
+  <section class="half-width">
+    <h6>Accès Rapide</h6>
+    <ul>
+      <li *ngFor="let item of menuList" [routerLink]="[item.routerLink]">
+        {{ item.name }}
+      </li>
+    </ul>
+  </section>
+  <section class="half-width">
+    <h6>Contactez-nous</h6>
+    <a class="flex align-center" href="https://maps.app.goo.gl/hzJtFWsvaquvWS1T7">
+      <i class="fa-solid fa-location-dot"></i>
+      <div class="flew column">
+        <p>7 impasse des poiries</p>
+        <p>38550 Sablons France</p>
+      </div>
+    </a>
+    <a class="flex align-center" href="tel:+33603430085">
+      <i class="fa-solid fa-phone"></i>
+      <p class="flex">06 03 43 00 85</p>
+    </a>
+    <h6 class="padding">Horaires</h6>
+    <p>Disponibilités : 7/7 24/24</p>
+  </section>
+</footer>
