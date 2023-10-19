@@ -30,3 +30,8 @@ Email : <i class="fa-solid fa-envelope"></i>
 Horaire : <i class="fa-solid fa-clock"></i>
 Menu burger : <i class="fa-solid fa-bars"></i>
 Croix fermer : <i class="fa-solid fa-circle-xmark"></i>
+<!-- //npm install --save @sendgrid/mail -->
+
+<!-- echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+echo "sendgrid.env" >> .gitignore
+source ./sendgrid.env -->

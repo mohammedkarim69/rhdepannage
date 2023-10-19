@@ -20,8 +20,19 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeadbandBlackYellowComponent } from './components/headband-black-yellow/headband-black-yellow.component';
 import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { NgIf } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { H1ComponentComponent } from './components/h1-component/h1-component.component';
+import {
+  FormControl,
+  Validators,
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,11 +51,21 @@ import { H1ComponentComponent } from './components/h1-component/h1-component.com
     HeadbandBlackYellowComponent,
     H1ComponentComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    NgIf,
+    MatButtonModule,
+    MatIconModule,
+    MatSelectModule,
   ],
   providers: [AuthGuard, httpInterceptorProviders],
   bootstrap: [AppComponent],

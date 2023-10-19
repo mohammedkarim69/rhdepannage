@@ -1,0 +1,61 @@
+@import "../../scss/variables.scss";
+@import "../../scss/buttons.scss";
+
+form {
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    mat-form-field {
+      width: 80vw;
+      max-width: 280px;
+      .prefix {
+        padding-left: $normal-padding;
+      }
+    }
+  }
+  .field-text-area {
+    .mat-form-field-text-area {
+      height: 400px;
+      overflow: hidden;
+      textarea {
+        height: 350px;
+        resize: none;
+      }
+    }
+  }
+  .submit {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 640px;
+    fieldset {
+      width: 50%;
+      align-items: center;
+      mat-form-field {
+        width: 100%;
+      }
+    }
+    .field-text-area {
+      width: 100%;
+      .mat-form-field-text-area {
+        height: 280px;
+        max-width: 580px;
+        width: 580px;
+        textarea {
+          height: 230px;
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}

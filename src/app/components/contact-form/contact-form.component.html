@@ -1,1 +1,234 @@
-<p>contact-form works!</p>
+
+<form
+  [formGroup]="sendContactForm"
+  #myForm="ngForm"
+  class="flex center"
+  (ngSubmit)="onSubmitContactForm()"
+>
+  <fieldset>
+    <mat-form-field>
+      <mat-label for="compagny" class="">Société...</mat-label>
+      <input
+        matInput
+        type="text"
+        name="compagny"
+        formControlName="compagnyFormControl"
+      />
+      <button
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="sendContactForm.get('compagnyFormControl')!.setValue('')"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-error
+      *ngIf="myForm.submitted && sendContactForm.controls['compagnyFormControl'].errors?.['maxlength']"
+    >
+      Le nom de l'entreprise ne peut pas dépasser
+      <strong>255 caractères</strong>.
+    </mat-error>
+  </fieldset>
+  <fieldset>
+    <mat-form-field>
+      <mat-label for="lastname" class="">Nom...</mat-label>
+      <input
+        matInput
+        type="text"
+        name="lastname"
+        formControlName="lastnameFormControl"
+      />
+      <button
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="sendContactForm.get('lastnameFormControl')!.setValue('')"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-error
+      *ngIf="
+      myForm.submitted && sendContactForm.controls['lastnameFormControl'].errors?.['minlength'] &&
+      !sendContactForm.controls['lastnameFormControl'].errors?.['required']
+      "
+    >
+      Le nom doit comporter plus de 2 lettres.
+    </mat-error>
+    <mat-error
+      *ngIf="myForm.submitted && sendContactForm.controls['lastnameFormControl'].errors?.['maxlength'] &&
+        !sendContactForm.controls['lastnameFormControl'].errors?.['required']
+      "
+    >
+      Le nom ne peut pas dépasser
+      <strong>255 caractères</strong>.</mat-error
+    >
+    <mat-error
+      *ngIf="myForm.submitted && sendContactForm.controls['lastnameFormControl'].errors?.['required']"
+    >
+      Le nom est <strong>obligatoire</strong>.
+    </mat-error>
+  </fieldset>
+  <fieldset>
+    <mat-form-field>
+      <mat-label for="firstname" class="">Prénom...</mat-label>
+      <input
+        matInput
+        type="text"
+        name="firstname"
+        formControlName="firstnameFormControl"
+      />
+      <button
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="sendContactForm.get('firstnameFormControl')!.setValue('')"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-error
+      *ngIf="myForm.submitted &&
+      sendContactForm.controls['firstnameFormControl'].errors?.['minlength'] &&
+        !sendContactForm.controls['firstnameFormControl'].errors?.['required']
+      "
+    >
+      Le prénom doit comporter plus de 2 lettres.
+    </mat-error>
+    <mat-error
+      *ngIf="myForm.submitted &&
+    sendContactForm.controls['firstnameFormControl'].errors?.['maxlength'] &&
+      !sendContactForm.controls['firstnameFormControl'].errors?.['required']
+    "
+    >
+      Le prénom ne peut pas dépasser
+      <strong>255 caractères</strong>.</mat-error
+    >
+    <mat-error
+      *ngIf="myForm.submitted && sendContactForm.controls['firstnameFormControl'].errors?.['required']"
+    >
+      Le prénom est <strong>obligatoire</strong>.
+    </mat-error>
+  </fieldset>
+  <fieldset>
+    <mat-form-field class="">
+      <mat-label for="email">Email</mat-label>
+      <input
+        type="email"
+        name="email"
+        matInput
+        formControlName="emailFormControl"
+        placeholder="Ex: email@example.com"
+      />
+      <button
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="sendContactForm.get('emailFormControl')!.setValue('')"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+      <mat-error
+        *ngIf="
+        myForm.submitted && sendContactForm.controls['emailFormControl'].errors?.['email'] &&
+        !sendContactForm.controls['emailFormControl'].errors?.['required']
+        "
+      >
+        Merci d'entrer une adresse mail valide.
+      </mat-error>
+      <mat-error
+        *ngIf="myForm.submitted && sendContactForm.controls['emailFormControl'].errors?.['required']"
+      >
+        L'email est <strong>obligatoire</strong>.
+      </mat-error>
+    </mat-form-field>
+  </fieldset>
+  <fieldset>
+    <mat-form-field class="">
+      <mat-label for="phone">Telephone</mat-label>
+      <span class="prefix" matPrefix>+33 &nbsp;</span>
+      <input
+        type="tel"
+        matInput
+        placeholder="0611223344"
+        name="phone"
+        formControlName="phoneFormControl"
+      />
+
+      <mat-error
+        *ngIf="
+      myForm.submitted && sendContactForm.controls['phoneFormControl'].errors?.['pattern'] &&
+      !sendContactForm.controls['phoneFormControl'].errors?.['required']
+        "
+      >
+        Merci d'entrer un numéro de téléphone à <strong>10 chiffres</strong>.
+      </mat-error>
+      <mat-error
+        *ngIf="myForm.submitted && sendContactForm.controls['phoneFormControl'].errors?.['required']"
+      >
+        Le numéro de téléphone est <strong>obligatoire</strong>.
+      </mat-error>
+    </mat-form-field>
+  </fieldset>
+  <fieldset>
+    <mat-form-field>
+      <mat-label>Choisir un thème...</mat-label>
+      <mat-select formControlName="titleFormControl">
+        <mat-option value="towing">Remorquage</mat-option>
+        <mat-option value="vehicle">Véhicule : rachat / revente</mat-option>
+        <mat-option value="wreck">Enlèvement d'épave(s)</mat-option>
+        <mat-option value="other">Autre sujet...</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-error
+      *ngIf="myForm.submitted && sendContactForm.controls['titleFormControl'].errors?.['required']"
+    >
+      Le thème est <strong>obligatoire</strong>.
+    </mat-error>
+  </fieldset>
+  <!-- Dropdowns pour "Comment nous avez-vous connus ?" -->
+  <!-- <fieldset>
+    <mat-form-field>
+      <mat-label>Comment nous avez-vous connus ?</mat-label>
+      <mat-select formControlName="knowingFormControl">
+        <mat-option value="search-engine">Moteur de recherche</mat-option>
+        <mat-option value="word-of-mouth">Bouche à oreilles</mat-option>
+        <mat-option value="advertising">Publicité</mat-option>
+        <mat-option value="other">Autre...</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </fieldset> -->
+  <fieldset class="field-text-area">
+    <mat-form-field class="mat-form-field-text-area">
+      <mat-label>Message</mat-label>
+      <textarea
+        matInput
+        placeholder="Ex. Bonjour, je voudrais des informations sur..."
+        formControlName="messageFormControl"
+      ></textarea>
+    </mat-form-field>
+    <mat-error
+      *ngIf="
+      myForm.submitted && sendContactForm.controls['messageFormControl'].errors?.['minlength'] &&
+      !sendContactForm.controls['messageFormControl'].errors?.['required']
+      "
+    >
+      Le message doit comporter plus de 10 lettres.
+    </mat-error>
+    <mat-error
+      *ngIf="myForm.submitted && sendContactForm.controls['messageFormControl'].errors?.['maxlength'] &&
+    !sendContactForm.controls['messageFormControl'].errors?.['required']
+  "
+    >
+      Le message ne peut pas dépasser
+      <strong>1.000 caractères</strong>.</mat-error
+    >
+    <mat-error
+      *ngIf="myForm.submitted && sendContactForm.controls['messageFormControl'].errors?.['required']"
+    >
+      Le message est <strong>obligatoire</strong>.
+    </mat-error>
+  </fieldset>
+  <button type="submit" class="btn submit">ENVOYER</button>
+</form>
