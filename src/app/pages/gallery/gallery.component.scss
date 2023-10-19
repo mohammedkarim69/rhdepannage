@@ -1,28 +1,44 @@
-.gallery-image {
-  display: flex;
-  flex-direction: column;
-}
+@import "../../scss/variables.scss";
 
+.gallery-page  {
+  flex-wrap: wrap;
+}
+.gallery-page div{
+  margin: auto;
+}
 img {
+ 
   height: 100%;
-  border: 5px solid black;
+  width: 80%;
+  border: 5px solid $black;
 }
 
 //----------------------------media queries--------------------------
 
 @media screen and (min-width: 768px) {
-  .gallery-image {
-    display: flex;
-    height: 30vh;
-    width: 100vw;
-    flex-direction: row;
-    padding-bottom: 5px;
-  }
+   .gallery-page  {
+   }
 
   img {
-    height: 100%;
     width: 25vw;
-    border: 5px solid black;
-    margin-bottom: 10px;
+    margin :20px auto;    
+   
   }
+
+    .test{
+      z-index: 998;
+      position: relative;
+     
+      height: 25vw;
+      width: 25vw;
+         
+      transition: 0.5s;
+      background-color:transparent;
+    }
+
+    .test:hover{
+      background-color:red;
+    }
+
+  
 }

@@ -1,11 +1,7 @@
-
 <app-h1-component [titleInComponent]="title"></app-h1-component>
-<div class="gallery-page">
- 
-  <div class="gallery-image">
-    <img src="../assets/images/01.jpg" alt="camion remorquant une voiture">
-    <img src="../assets/images/03.jpg" alt="camion remorquant une voiture">
-    <img src="../assets/images/02.jpg" alt="camion remorquant une voiture">
-    <img src="../assets/images/05.jpg" alt="camion remorquant une voiture">
-  </div>
+<div   class="gallery-page flex  "  >
+  <div *ngFor="let p of pictureUrl" >
+<img  [src]="p.image"  [alt]="p.alt">
+<div class="test"></div>
+</div>
 </div>
