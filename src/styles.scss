@@ -221,6 +221,10 @@ body {
 }
 
 h2 {
+  font-size: $triple-font-size;
+}
+
+h3 {
   font-size: $double-font-size;
   padding: $double-padding 0;
   // background-color: $yellow;
@@ -231,8 +235,18 @@ strong {
   font-weight: bold;
 }
 
-p{
+p {
   line-height: 1.2;
+}
+
+a {
+  color: $black;
+}
+
+i {
+  font-size: $double-font-size;
+  color: $yellow;
+  width: $triple-padding;
 }
 
 .about-us-page,
@@ -255,14 +269,21 @@ p{
   .p404-page {
     padding: $four-padding;
   }
-  h2{
+  h2 {
+    font-size: $fourth-font-size;
+  }
+  h3 {
     font-size: $triple-font-size;
     padding: $triple-padding 0;
   }
 
-  p{
+  p {
     font-size: $double-font-size;
     line-height: 1.2;
+  }
+  i {
+    font-size: $triple-font-size;
+    width: $triple-padding * 2;
   }
 }
 // Point de rupture : 768 pixels de largeur
@@ -279,7 +300,7 @@ p{
   .home-page,
   .services-page,
   .p404-page {
-    padding:  0 160px 80px 160px;
+    padding: 0 160px 80px 160px;
   }
 }
 

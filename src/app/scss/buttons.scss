@@ -2,6 +2,12 @@
 
 .btn {
   border-radius: $border-radius;
-  border: none;
+  border: 1px solid $black;
   padding: $normal-padding;
+  font-size: $double-font-size;
+}
+
+.submit {
+  background-color: $yellow;
+  box-shadow: 2px 2px 8px $black;
 }
