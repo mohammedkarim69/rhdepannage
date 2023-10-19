@@ -23,12 +23,7 @@ footer {
     padding-bottom: $normal-padding;
   }
 }
-i {
-  font-size: $double-font-size;
-  color: $yellow;
 
-  width: $triple-padding;
-}
 
 @media screen and (min-width: 768px) {
   footer {
@@ -42,10 +37,7 @@ i {
       }
     }
   }
-  i {
-    font-size: $triple-font-size;
-    width: $triple-padding * 2;
-  }
+
   li,
   p {
     padding-top: $normal-padding;
