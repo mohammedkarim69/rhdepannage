@@ -4,41 +4,52 @@
   flex-wrap: wrap;
 }
 .gallery-page div{
-  margin: auto;
+  margin:  auto;
 }
 img {
- 
+  margin: 10px 0;
   height: 100%;
   width: 80%;
-  border: 5px solid $black;
+  
 }
 
 //----------------------------media queries--------------------------
 
 @media screen and (min-width: 768px) {
    .gallery-page  {
+  
    }
 
-  img {
+  .hoverpicture img {
     width: 25vw;
-    margin :20px auto;    
+    margin :20px auto;   
+    filter: grayscale(100%); 
+    transition: 0.5S ease;
+    cursor: pointer;
    
   }
+.hoverpicture
+{overflow: hidden;}
 
-    .test{
-      z-index: 998;
-      position: relative;
+  .hoverpicture img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+
+    // .test{
+    //   z-index: 998;
+    //   position: relative;
      
-      height: 25vw;
-      width: 25vw;
+    //   height: 25vw;
+    //   width: 25vw;
          
-      transition: 0.5s;
-      background-color:transparent;
-    }
+    //   transition: 0.5s;
+    //   background-color:transparent;
+    // }
 
-    .test:hover{
-      background-color:red;
-    }
+    // .test:hover{
+    //   background-color:red;
+    // }
 
   
 }
