@@ -1,0 +1,80 @@
+@import "../../scss/variables.scss";
+
+.gallery-page  {
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 900;
+  
+}
+.gallery-page div{
+  margin:  auto;
+}
+img {
+  
+  margin: 20px 0;
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  border: 5px solid yellow;
+   animation: myAnim 6s ease 0s 1 normal forwards; 
+}
+
+
+
+@keyframes myAnim {
+
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+//----------------------------media queries--------------------------
+
+@media screen and (min-width: 768px) {
+   
+
+  .hoverpicture img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin :30px auto;   
+    filter: grayscale(100%); 
+    transition: 0.5S ease;
+    cursor: pointer;
+   
+  }
+.hoverpicture
+{overflow: hidden;
+  width: 400px;
+  height: 400px;
+}
+
+  .hoverpicture img:hover{
+    transform: scale(1.3);
+    filter: grayscale(0%);
+  }
+
+    // .test{
+    //   z-index: 998;
+    //   position: relative;
+     
+    //   height: 25vw;
+    //   width: 25vw;
+         
+    //   transition: 0.5s;
+    //   background-color:transparent;
+    // }
+
+    // .test:hover{
+    //   background-color:red;
+    // }
+
+  
+}
