@@ -1,6 +1,8 @@
 @import "../../scss/variables.scss";
 
 .main-container {
+  z-index: 1000;
+  position:fixed;
   display: flex;
   background-color: $black;
   height: 11vh;
@@ -56,7 +58,7 @@
   right: 0vh;
 }
 .navbarmobile i {
-  z-index: 999;
+  z-index: 9999;
   font-size: x-large;
   position: fixed;
   //top: 20px;
