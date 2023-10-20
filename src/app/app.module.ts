@@ -33,6 +33,7 @@ import {
   FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { OurvaluesComponent } from './ourvalues/ourvalues.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import {
     ContactFormComponent,
     HeadbandBlackYellowComponent,
     H1ComponentComponent,
+    OurvaluesComponent,
   ],
 
   imports: [
