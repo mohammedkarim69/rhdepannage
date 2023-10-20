@@ -5,6 +5,8 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { EmailService } from 'src/app/shared/services/email.service';
+// import { SENDGRID_API_KEY } from 'src/app/shared/variables';
 // import * as Email from 'smtpjs/smtp';
 declare global {
   interface Window {
@@ -17,7 +19,27 @@ declare global {
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private email: EmailService) {}
+
+ngOnInit(){
+//   const sgMail = require('@sendgrid/mail')
+// sgMail.setApiKey(SENDGRID_API_KEY)
+// const msg = {
+//   to: 'guillaume.cometto@gmail.com', // Change to your recipient
+//   from: 'guillaume_cometto@hotmail.fr', // Change to your verified sender
+//   subject: 'Sending with SendGrid is Fun',
+//   text: 'and easy to do anywhere, even with Node.js',
+//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+// }
+// sgMail
+//   .send(msg)
+//   .then(() => {
+//     console.log('Email sent')
+//   })
+//   .catch((error:any) => {
+//     console.error(error)
+//   })
+}
 
   sendContactForm = this.formBuilder.group({
     compagnyFormControl: new FormControl('', [Validators.maxLength(255)]),
@@ -49,11 +71,22 @@ export class ContactFormComponent {
   });
 
   onSubmitContactForm(): void {
-    console.log(this.sendContactForm.value);
     if (this.sendContactForm.valid) {
       console.log('yes');
+
+      this.email.sendEmail(this.sendContactForm).subscribe(
+        (response: any) => {
+          // window.open(response);
+          // console.log(response);
+        },
+        (error:any) => {
+          console.warn(error.responseText);
+          console.log({ error });
+        }
+      );
+
     } else {
-      this.touchedAllFieldsets(this.sendContactForm);
+      // this.touchedAllFieldsets(this.sendContactForm);
     }
   }
 

@@ -1,9 +1,19 @@
-
-<form
+<!-- <form
   [formGroup]="sendContactForm"
   #myForm="ngForm"
   class="flex center"
+  action="https://formsubmit.co/guillaume.cometto@gmail.com"
+  method="POST"
   (ngSubmit)="onSubmitContactForm()"
+> -->
+
+<form
+  target="_blank"
+  action="https://formsubmit.co/guillaume.cometto@gmail.com"
+  method="POST"
+  [formGroup]="sendContactForm"
+  #myForm="ngForm"
+  class="flex center"
 >
   <fieldset>
     <mat-form-field>
