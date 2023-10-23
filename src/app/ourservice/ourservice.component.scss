@@ -1,0 +1,9 @@
+@import "../scss/variables.scss";
+img {
+  width: 100vw;
+  height: calc($mobile-h1-component)
+}
+
+.texte ,p {
+  text-align: center;
+}

@@ -30,6 +30,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { H1ComponentComponent } from './components/h1-component/h1-component.component';
 import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
 import { OurvaluesComponent } from './ourvalues/ourvalues.component';
+import { OurserviceComponent } from './ourservice/ourservice.component';
+
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { OurvaluesComponent } from './ourvalues/ourvalues.component';
     H1ComponentComponent,
     FormRedirectComponent,
     OurvaluesComponent,
+    OurserviceComponent,
+    
   ],
 
   imports: [
