@@ -28,8 +28,9 @@ import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { H1ComponentComponent } from './components/h1-component/h1-component.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { EmailService } from './shared/services/email.service';
+import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { EmailService } from './shared/services/email.service';
     ContactFormComponent,
     HeadbandBlackYellowComponent,
     H1ComponentComponent,
+    FormRedirectComponent,
   ],
 
   imports: [
@@ -54,15 +56,13 @@ import { EmailService } from './shared/services/email.service';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule,
     NgIf,
     MatButtonModule,
     MatIconModule,
     MatSelectModule,
+    ReactiveFormsModule
   ],
   providers: [EmailService, AuthGuard, httpInterceptorProviders],
   bootstrap: [AppComponent],

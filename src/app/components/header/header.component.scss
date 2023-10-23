@@ -5,19 +5,19 @@
   position:fixed;
   display: flex;
   background-color: $black;
-  height: 11vh;
+  height: $mobile-header;
   align-items: center;
   border: none;
-  position: fixed;
   width: 100vw;
+  top: 0;
 }
 .container {
   display: flex;
-  height: 5vh;
+  height: calc($mobile-header / 2);
   width: 82vw;
-  flex-direction: row;
-  margin: 1rem;
+  margin: $half-margin;
 }
+
 .fa-phone {
   color: $yellow;
   font-size: x-large;
@@ -30,24 +30,24 @@
 
 
 .logo {
-  height: 8vh;
+  height: calc($mobile-header / 1.5);
   background-color: $yellow;
   border-radius: 25px;
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
+  height: calc($mobile-header / 1.5);
+  width: calc($mobile-header / 1.5);
 }
 
 .navlistmobile {
-  margin-top: 10vh;
-  height: 90vh;
+  margin-top: $mobile-header;
+  height: calc(100vh - $mobile-header);
   display: flex;
   flex-direction: column;
   align-content: space-around;
   text-align: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   position: fixed;
   top: 0;
   right: -70vw;
@@ -94,11 +94,6 @@
   display: none;
 }
 
-.y {
-  position: relative; 
-
- 
-}
 
 //-------------------------media queries------------------------//
 @media screen and (min-width: 768px) {
@@ -112,12 +107,13 @@
   .main-container {
     display: flex;
     background-color: $black;
-    height: 20vh;
+    height: $desktop-header;
     align-items: center;
   }
 
   .logo {
-    height: 4vh;
+    height: calc($desktop-header / 2.5);
+    width: calc($desktop-header / 2.5);
   }
 
  
@@ -134,14 +130,13 @@
   }
 
   .mainmenus {
-    display: flex;
     flex-direction: row;
     width: 80vw;
     justify-content: space-around;
-    font-size: 1.1rem;
+    font-size: $normal-font-size;
   }
   .mainmenus li {
-    color: white;
+    color: $white;
     transition: 0.5s;
   }
 
@@ -156,11 +151,6 @@
     justify-content: space-between;
   }
 
-
-  .y {
-    position: relative; 
-   
-  }
 }
 
 @media screen and (min-width: 900px) {

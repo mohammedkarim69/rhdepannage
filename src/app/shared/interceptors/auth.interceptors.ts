@@ -17,9 +17,10 @@ export class AuthInterceptor implements HttpInterceptor {
     request: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    if (
+    if (request.url.startsWith('https://formsubmit.io/send/') ||
       request.url.startsWith('https://api.cloudinary.com/') ||
-      request.url.startsWith('https://formsubmit.co/')
+      request.url.startsWith('https://formsubmit.co/guillaumecometto@gmail.com') ||
+      request.url.startsWith('https://formsubmit.co/guillaume.cometto@gmail.com')
     ) {
       return next.handle(request);
     } else {

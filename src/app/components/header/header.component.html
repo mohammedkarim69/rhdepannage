@@ -1,9 +1,8 @@
-
 <div class="main-container">
   <div class="container">
-     <div class="logo">
-      <img src="../assets/images/logo.png"/>
-    </div> 
+    <div class="logo">
+      <img src="../assets/images/logo.png" />
+    </div>
     <div class="phone flex">
       <i class="fa-solid fa-phone"></i>
     </div>
@@ -18,8 +17,7 @@
           displayMenuBurger ? 'navlistmobile invisible' : 'navlistmobile'
         "
       >
-        <ul class="mainmenu" 
-        (click)="toggleMenu()">
+        <ul class="mainmenu" (click)="toggleMenu()">
           <li *ngFor="let item of navbar" routerLink="{{ item.routerLink }}">
             {{ item.name }}
           </li>
@@ -28,20 +26,15 @@
     </div>
   </div>
 
-   <nav class="navdesktop">
-      <div class="ok">
-      <ul class="mainmenus">
-       <li  *ngFor="let item of navbar" routerLink="{{ item.routerLink }}">
-        {{ item.name }}
-      </li>
+  <nav class="navdesktop">
+    <div class="ok">
+      <ul class="mainmenus flex">
+        <li *ngFor="let item of navbar" routerLink="{{ item.routerLink }}">
+          {{ item.name }}
+        </li>
       </ul>
     </div>
-    </nav>
-  </div>
+  </nav>
 
-<app-headband-black-yellow class="y"></app-headband-black-yellow>
-  
-  
-  
-  
-
+  <app-headband-black-yellow></app-headband-black-yellow>
+</div>

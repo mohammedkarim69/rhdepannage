@@ -3,10 +3,10 @@
 .blur-background {
   position: fixed;
   width: 100vw;
-  height: 40vh; /* Ajustez la hauteur comme nécessaire */
+  height: $mobile-h1-component; /* Ajustez la hauteur comme nécessaire */
   text-align: center;
   z-index: -1; /* Placez-le en arrière-plan */
-  top: 10vh;
+  top: calc($mobile-header - 1px);
   left: 0;
   background-image: url(../../../assets/images/02.jpg);
   background-attachment: fixed;
@@ -18,9 +18,11 @@
 }
 
 h1 {
+  position: fixed;
+  top:$mobile-header;
   letter-spacing: 2px;
   height: calc(
-    40vh - 8px
+    $mobile-h1-component - 1px
   ); /* pour que la coupure avec la page du bas soit nette */
   color: $white;
   font-size: $triple-font-size;
@@ -31,17 +33,19 @@ h1 {
   //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
   //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black;
   z-index: 1; /* Placez-le au-dessus de l'arrière-plan flou */
-}
-
-@media screen and (min-width: 700px) {
-  .blur-background {
-    top: 20vh;
-  }
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+  .blur-background {
+    top: calc($desktop-header - 1px);
+    height: $desktop-h1-component;
+  }
   h1 {
+    top: $desktop-header;
     font-weight: bold;
     font-size: $max-font-size;
+    height: calc($desktop-h1-component - 8px);
   }
 }
