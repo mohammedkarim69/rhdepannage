@@ -3,41 +3,39 @@
 .blur-background {
   position: fixed;
   width: 100vw;
-  height: $mobile-h1-component; /* Ajustez la hauteur comme nécessaire */
-  text-align: center;
   z-index: -1; /* Placez-le en arrière-plan */
-  top: calc($mobile-header - 1px);
+  top: calc($mobile-header);
   left: 0;
-  background-image: url(../../../assets/images/02.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(1px) brightness(40%);
-  // opacity: 0.5;
+  filter: blur(1px) brightness(20%);
+  min-height: $mobile-h1-component;
 }
 
 h1 {
   position: absolute;
   top: $mobile-header;
   letter-spacing: 2px;
-  height: calc($mobile-h1-component - 1px);
+  height: calc($mobile-h1-component);
   color: $white;
   font-size: $triple-font-size;
   font-weight: bold;
-  // z-index: 1;
   width: 100%;
   text-align: center;
+  background: linear-gradient(
+    0deg,
+    $black 0%,
+    transparent 40%,
+    transparent 60%,
+    $black 100%
+  );
 }
-
 @media screen and (min-width: 768px) {
   .blur-background {
-    top: calc($desktop-header - 1px);
-    height: $desktop-h1-component;
+    top: calc($desktop-header);
+    min-height: $desktop-h1-component;
   }
   h1 {
     top: $desktop-header;
     font-size: $max-font-size;
-    height: calc($desktop-h1-component - 8px);
+    height: calc($desktop-h1-component);
   }
 }
