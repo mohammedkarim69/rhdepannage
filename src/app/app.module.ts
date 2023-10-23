@@ -62,9 +62,8 @@ import { OurvaluesComponent } from './ourvalues/ourvalues.component';
     MatButtonModule,
     MatIconModule,
     MatSelectModule,
-    ReactiveFormsModule
   ],
-  providers: [EmailService, AuthGuard, httpInterceptorProviders],
+  providers: [ AuthGuard, httpInterceptorProviders],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
