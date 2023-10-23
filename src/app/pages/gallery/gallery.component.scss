@@ -2,9 +2,9 @@
 
 .gallery-page  {
   flex-wrap: wrap;
-  position: relative;
+  //position: relative;
   z-index: 900;
-  
+  //mettre un backgroundcolor//
 }
 .gallery-page div{
   margin:  auto;
@@ -21,7 +21,7 @@ img {
 
 
 
-@keyframes myAnim {
+ @keyframes myAnim {
 
   0% {
     opacity: 0;
@@ -41,19 +41,20 @@ img {
 
   .hoverpicture img {
     position: relative;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     margin :30px auto;   
     filter: grayscale(100%); 
     transition: 0.5S ease;
     cursor: pointer;
+    animation: none;
    
   }
-.hoverpicture
-{overflow: hidden;
-  width: 400px;
-  height: 400px;
+.hoverpicture{
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
   .hoverpicture img:hover{
@@ -61,20 +62,7 @@ img {
     filter: grayscale(0%);
   }
 
-    // .test{
-    //   z-index: 998;
-    //   position: relative;
-     
-    //   height: 25vw;
-    //   width: 25vw;
-         
-    //   transition: 0.5s;
-    //   background-color:transparent;
-    // }
-
-    // .test:hover{
-    //   background-color:red;
-    // }
+    
 
   
 }
