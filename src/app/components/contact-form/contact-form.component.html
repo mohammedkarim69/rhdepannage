@@ -1,234 +1,216 @@
-
 <form
-  [formGroup]="sendContactForm"
-  #myForm="ngForm"
+  action="https://formsubmit.io/send/karim.bouzidi@hotmail.fr"
+  method="POST"
   class="flex center"
-  (ngSubmit)="onSubmitContactForm()"
+  id="contactform"
 >
   <fieldset>
     <mat-form-field>
-      <mat-label for="compagny" class="">Société...</mat-label>
+      <mat-label>Société...</mat-label>
       <input
         matInput
         type="text"
         name="compagny"
-        formControlName="compagnyFormControl"
+        id="compagny"
+        (keyup)="changeCompagnyValue($event)"
       />
-      <button
-        matSuffix
-        mat-icon-button
-        aria-label="Clear"
-        (click)="sendContactForm.get('compagnyFormControl')!.setValue('')"
-      >
-        <mat-icon>close</mat-icon>
-      </button>
     </mat-form-field>
-    <mat-error
-      *ngIf="myForm.submitted && sendContactForm.controls['compagnyFormControl'].errors?.['maxlength']"
-    >
-      Le nom de l'entreprise ne peut pas dépasser
-      <strong>255 caractères</strong>.
-    </mat-error>
+    <div *ngIf="compagnyValue && isFormSubmitted && hasErrors">
+      <small *ngIf="compagnyValue.length > 255">
+        Le nom de l'entreprise ne peut pas dépasser
+        <strong>255 caractères</strong>.
+      </small>
+    </div>
   </fieldset>
   <fieldset>
     <mat-form-field>
-      <mat-label for="lastname" class="">Nom...</mat-label>
+      <mat-label>Nom...</mat-label>
       <input
         matInput
         type="text"
         name="lastname"
-        formControlName="lastnameFormControl"
+        id="lastname"
+        (keyup)="changeLastnameValue($event)"
       />
       <button
         matSuffix
         mat-icon-button
         aria-label="Clear"
-        (click)="sendContactForm.get('lastnameFormControl')!.setValue('')"
+        (click)="lastnameValue = ''"
       >
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <mat-error
-      *ngIf="
-      myForm.submitted && sendContactForm.controls['lastnameFormControl'].errors?.['minlength'] &&
-      !sendContactForm.controls['lastnameFormControl'].errors?.['required']
-      "
-    >
-      Le nom doit comporter plus de 2 lettres.
-    </mat-error>
-    <mat-error
-      *ngIf="myForm.submitted && sendContactForm.controls['lastnameFormControl'].errors?.['maxlength'] &&
-        !sendContactForm.controls['lastnameFormControl'].errors?.['required']
-      "
-    >
-      Le nom ne peut pas dépasser
-      <strong>255 caractères</strong>.</mat-error
-    >
-    <mat-error
-      *ngIf="myForm.submitted && sendContactForm.controls['lastnameFormControl'].errors?.['required']"
-    >
-      Le nom est <strong>obligatoire</strong>.
-    </mat-error>
+    <div *ngIf="isFormSubmitted && hasErrors">
+      <small *ngIf="lastnameValue && lastnameValue.length > 255">
+        Le nom ne doit pas comporter plus de
+        <strong>255 caractères</strong>.
+      </small>
+      <small *ngIf="lastnameValue && lastnameValue.length <= 2">
+        Le nom doit comporter plus de
+        <strong>2 caractères</strong>.
+      </small>
+      <small *ngIf="!lastnameValue">
+        Le nom est
+        <strong>obligatoire</strong>.
+      </small>
+    </div>
   </fieldset>
   <fieldset>
     <mat-form-field>
-      <mat-label for="firstname" class="">Prénom...</mat-label>
+      <mat-label>Prénom...</mat-label>
       <input
         matInput
         type="text"
         name="firstname"
-        formControlName="firstnameFormControl"
+        id="firstname"
+        (keyup)="changeFirstnameValue($event)"
       />
       <button
         matSuffix
         mat-icon-button
         aria-label="Clear"
-        (click)="sendContactForm.get('firstnameFormControl')!.setValue('')"
+        (click)="firstnameValue = ''"
       >
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <mat-error
-      *ngIf="myForm.submitted &&
-      sendContactForm.controls['firstnameFormControl'].errors?.['minlength'] &&
-        !sendContactForm.controls['firstnameFormControl'].errors?.['required']
-      "
-    >
-      Le prénom doit comporter plus de 2 lettres.
-    </mat-error>
-    <mat-error
-      *ngIf="myForm.submitted &&
-    sendContactForm.controls['firstnameFormControl'].errors?.['maxlength'] &&
-      !sendContactForm.controls['firstnameFormControl'].errors?.['required']
-    "
-    >
-      Le prénom ne peut pas dépasser
-      <strong>255 caractères</strong>.</mat-error
-    >
-    <mat-error
-      *ngIf="myForm.submitted && sendContactForm.controls['firstnameFormControl'].errors?.['required']"
-    >
-      Le prénom est <strong>obligatoire</strong>.
-    </mat-error>
+    <div *ngIf="isFormSubmitted && hasErrors">
+      <small *ngIf="firstnameValue && lastnameValue.length > 255">
+        Le prénom ne doit pas comporter plus de
+        <strong>255 caractères</strong>.
+      </small>
+      <small *ngIf="firstnameValue.length <= 2">
+        Le prénom doit comporter plus de
+        <strong>2 caractères</strong>.
+      </small>
+      <small *ngIf="!firstnameValue">
+        Le prénom est
+        <strong>obligatoire</strong>.
+      </small>
+    </div>
   </fieldset>
   <fieldset>
-    <mat-form-field class="">
-      <mat-label for="email">Email</mat-label>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
       <input
         type="email"
         name="email"
+        id="email"
         matInput
-        formControlName="emailFormControl"
         placeholder="Ex: email@example.com"
+        (keyup)="changeEmailValue($event)"
       />
       <button
         matSuffix
         mat-icon-button
         aria-label="Clear"
-        (click)="sendContactForm.get('emailFormControl')!.setValue('')"
+        (click)="emailValue = ''"
       >
         <mat-icon>close</mat-icon>
       </button>
-      <mat-error
-        *ngIf="
-        myForm.submitted && sendContactForm.controls['emailFormControl'].errors?.['email'] &&
-        !sendContactForm.controls['emailFormControl'].errors?.['required']
-        "
-      >
-        Merci d'entrer une adresse mail valide.
-      </mat-error>
-      <mat-error
-        *ngIf="myForm.submitted && sendContactForm.controls['emailFormControl'].errors?.['required']"
-      >
-        L'email est <strong>obligatoire</strong>.
-      </mat-error>
     </mat-form-field>
+    <div *ngIf="isFormSubmitted && hasErrors">
+      <small *ngIf="!validateEmail()">
+        Renseigner un email au bon format
+        <strong>bon format</strong>.
+      </small>
+      <small *ngIf="!emailValue">
+        L'email est
+        <strong>obligatoire</strong>.
+      </small>
+    </div>
   </fieldset>
   <fieldset>
-    <mat-form-field class="">
-      <mat-label for="phone">Telephone</mat-label>
+    <mat-form-field>
+      <mat-label>Telephone</mat-label>
       <span class="prefix" matPrefix>+33 &nbsp;</span>
       <input
         type="tel"
         matInput
         placeholder="0611223344"
         name="phone"
-        formControlName="phoneFormControl"
+        id="phone"
+        (keyup)="changePhoneValue($event)"
       />
-
-      <mat-error
-        *ngIf="
-      myForm.submitted && sendContactForm.controls['phoneFormControl'].errors?.['pattern'] &&
-      !sendContactForm.controls['phoneFormControl'].errors?.['required']
-        "
-      >
-        Merci d'entrer un numéro de téléphone à <strong>10 chiffres</strong>.
-      </mat-error>
-      <mat-error
-        *ngIf="myForm.submitted && sendContactForm.controls['phoneFormControl'].errors?.['required']"
-      >
-        Le numéro de téléphone est <strong>obligatoire</strong>.
-      </mat-error>
     </mat-form-field>
+    <div *ngIf="isFormSubmitted && hasErrors">
+      <small *ngIf="validatePhone()">
+        Merci d'entrer un numéro de téléphone à
+        <strong>10 chiffres</strong>.</small
+      >
+      <small *ngIf="!phoneValue">
+        Le numéro de téléphone est <strong>obligatoire</strong>.</small
+      >
+    </div>
   </fieldset>
   <fieldset>
     <mat-form-field>
       <mat-label>Choisir un thème...</mat-label>
-      <mat-select formControlName="titleFormControl">
-        <mat-option value="towing">Remorquage</mat-option>
-        <mat-option value="vehicle">Véhicule : rachat / revente</mat-option>
-        <mat-option value="wreck">Enlèvement d'épave(s)</mat-option>
-        <mat-option value="other">Autre sujet...</mat-option>
+      <mat-select name="theme" id="theme">
+        <mat-option (click)="changeThemeValue('Remorquage')" value="Remorquage"
+          >Remorquage</mat-option
+        >
+        <mat-option
+          (click)="changeThemeValue('Véhicule : rachat / revente')"
+          value="Véhicule : rachat / revente"
+          >Véhicule : rachat / revente</mat-option
+        >
+        <mat-option
+          (click)="changeThemeValue('Enlèvement épave(s)')"
+          value="Enlèvement d'épave(s)"
+          >Enlèvement d'épave(s)</mat-option
+        >
+        <mat-option (click)="changeThemeValue('Autre sujet...')"
+          >Autre sujet...</mat-option
+        >
       </mat-select>
     </mat-form-field>
-    <mat-error
-      *ngIf="myForm.submitted && sendContactForm.controls['titleFormControl'].errors?.['required']"
-    >
-      Le thème est <strong>obligatoire</strong>.
-    </mat-error>
+    <div *ngIf="isFormSubmitted && hasErrors">
+      <small *ngIf="!themeValue">
+        Le thème est <strong>obligatoire</strong>.</small
+      >
+    </div>
   </fieldset>
-  <!-- Dropdowns pour "Comment nous avez-vous connus ?" -->
-  <!-- <fieldset>
-    <mat-form-field>
-      <mat-label>Comment nous avez-vous connus ?</mat-label>
-      <mat-select formControlName="knowingFormControl">
-        <mat-option value="search-engine">Moteur de recherche</mat-option>
-        <mat-option value="word-of-mouth">Bouche à oreilles</mat-option>
-        <mat-option value="advertising">Publicité</mat-option>
-        <mat-option value="other">Autre...</mat-option>
-      </mat-select>
-    </mat-form-field>
-  </fieldset> -->
+
   <fieldset class="field-text-area">
     <mat-form-field class="mat-form-field-text-area">
       <mat-label>Message</mat-label>
       <textarea
         matInput
         placeholder="Ex. Bonjour, je voudrais des informations sur..."
-        formControlName="messageFormControl"
+        name="message"
+        id="message"
+        (keyup)="changeMessageValue($event)"
       ></textarea>
     </mat-form-field>
-    <mat-error
-      *ngIf="
-      myForm.submitted && sendContactForm.controls['messageFormControl'].errors?.['minlength'] &&
-      !sendContactForm.controls['messageFormControl'].errors?.['required']
-      "
-    >
-      Le message doit comporter plus de 10 lettres.
-    </mat-error>
-    <mat-error
-      *ngIf="myForm.submitted && sendContactForm.controls['messageFormControl'].errors?.['maxlength'] &&
-    !sendContactForm.controls['messageFormControl'].errors?.['required']
-  "
-    >
-      Le message ne peut pas dépasser
-      <strong>1.000 caractères</strong>.</mat-error
-    >
-    <mat-error
-      *ngIf="myForm.submitted && sendContactForm.controls['messageFormControl'].errors?.['required']"
-    >
-      Le message est <strong>obligatoire</strong>.
-    </mat-error>
+    <div *ngIf="hasErrors && isFormSubmitted">
+      <small *ngIf="messageValue && messageValue.length > 1000">
+        Le message ne doit pas comporter plus de
+        <strong>1000 caractères</strong>.
+      </small>
+      <small *ngIf="messageValue && messageValue.length <= 10">
+        Le message doit comporter plus de
+        <strong>10 caractères</strong>.
+      </small>
+      <small *ngIf="!messageValue">
+        Le message est
+        <strong>obligatoire</strong>.
+      </small>
+    </div>
   </fieldset>
-  <button type="submit" class="btn submit">ENVOYER</button>
+  <input name="_formsubmit_id" type="text" style="display: none" />
+  <input
+    name="_redirect"
+    type="hidden"
+    id="name"
+    value="http://localhost:4200//formulaire-envoye"
+  />
+  <button
+    [type]="checkErrors() ? 'submit' : 'button'"
+    (click)="changeSubmitted()"
+    class="btn submit"
+  >
+    ENVOYER
+  </button>
 </form>

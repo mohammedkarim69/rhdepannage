@@ -23,3 +23,4 @@ export const NAVBAR_MENU: Menu[] = [
     routerLink: '/contact',
   },
 ];
+export const SENDGRID_API_KEY='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'
