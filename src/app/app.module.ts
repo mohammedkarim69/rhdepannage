@@ -28,9 +28,8 @@ import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { H1ComponentComponent } from './components/h1-component/h1-component.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { EmailService } from './shared/services/email.service';
 import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
+import { OurvaluesComponent } from './ourvalues/ourvalues.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +48,7 @@ import { FormRedirectComponent } from './pages/form-redirect/form-redirect.compo
     HeadbandBlackYellowComponent,
     H1ComponentComponent,
     FormRedirectComponent,
+    OurvaluesComponent,
   ],
 
   imports: [
