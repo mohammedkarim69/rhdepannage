@@ -32,8 +32,41 @@ form {
     width: 200px;
   }
 }
+.all-infos {
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .underline {
+    height: 4px;
+    width: 50px;
+    background-color: $yellow;
+    box-shadow: 0px 2px 8px $black;
+    margin: $half-margin 0;
+  }
+  p {
+    width: 100%;
+  }
+  .width-to-adapt {
+    width: 50%;
+    margin-bottom: $half-margin;
+  }
+}
+
+i {
+  border-radius: 25px;
+  text-shadow: 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+    0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+    0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+    0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+    0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+    0 0 0.7px $black;
+}
 
 @media screen and (min-width: 768px) {
+  .width-to-adapt {
+    width: auto;
+  }
   form {
     flex-direction: row;
     flex-wrap: wrap;
