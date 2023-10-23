@@ -18,21 +18,14 @@
 }
 
 h1 {
-  position: fixed;
-  top:$mobile-header;
+  position: absolute;
+  top: $mobile-header;
   letter-spacing: 2px;
-  height: calc(
-    $mobile-h1-component - 1px
-  ); /* pour que la coupure avec la page du bas soit nette */
+  height: calc($mobile-h1-component - 1px);
   color: $white;
   font-size: $triple-font-size;
   font-weight: bold;
-  // text-shadow: 0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
-  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
-  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
-  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black,
-  //   0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 1px $black;
-  z-index: 1; /* Placez-le au-dessus de l'arrière-plan flou */
+  // z-index: 1;
   width: 100%;
   text-align: center;
 }
@@ -44,7 +37,6 @@ h1 {
   }
   h1 {
     top: $desktop-header;
-    font-weight: bold;
     font-size: $max-font-size;
     height: calc($desktop-h1-component - 8px);
   }
