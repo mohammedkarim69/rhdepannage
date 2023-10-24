@@ -1,9 +1,15 @@
 @import "../scss/variables.scss";
 img {
-  width: 100vw;
+  width: 100%;
   height: calc($mobile-h1-component)
 }
 
-.texte ,p {
+.texte p {
   text-align: center;
 }
+
+.container {
+  padding: $normal-padding;
+
+}
+
