@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
-  constructor(private http: HttpClient) {}
 
-  isFormSubmitted: boolean = false;
+  isFormClicked: boolean = false;
   hasErrors: boolean = false;
+  isLoaderVisible: boolean = false;
 
   compagnyValue: string = '';
   lastnameValue: string = '';
@@ -73,8 +73,11 @@ export class ContactFormComponent {
     return false;
   }
 
-  changeSubmitted(){
-    this.isFormSubmitted = true;
+  changeSubmitted() {
+    this.isFormClicked = true;
+    if (this.checkErrors()) {
+      this.isLoaderVisible = true;
+    }
   }
 
   checkErrors(): boolean {
@@ -89,10 +92,10 @@ export class ContactFormComponent {
       this.checkStringValidity(this.firstnameValue, 3, 255) &&
       this.checkStringValidity(this.messageValue, 10, 1000)
     ) {
-      this.hasErrors = false
+      this.hasErrors = false;
       return true;
     }
-    this.hasErrors = true
+    this.hasErrors = true;
     return false;
   }
 }

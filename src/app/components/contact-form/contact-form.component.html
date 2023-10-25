@@ -1,4 +1,4 @@
-<div class="all-infos  flex column center">
+<div class="all-infos flex column center">
   <h2>Adresse et Téléphone</h2>
   <span class="underline"></span>
   <a
@@ -40,7 +40,7 @@
         (keyup)="changeCompagnyValue($event)"
       />
     </mat-form-field>
-    <div *ngIf="compagnyValue && isFormSubmitted && hasErrors">
+    <div *ngIf="compagnyValue && isFormClicked && hasErrors">
       <small *ngIf="compagnyValue.length > 255">
         Le nom de l'entreprise ne peut pas dépasser
         <strong>255 caractères</strong>.
@@ -66,7 +66,7 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <div *ngIf="isFormSubmitted && hasErrors">
+    <div *ngIf="isFormClicked && hasErrors">
       <small *ngIf="lastnameValue && lastnameValue.length > 255">
         Le nom ne doit pas comporter plus de
         <strong>255 caractères</strong>.
@@ -100,7 +100,7 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <div *ngIf="isFormSubmitted && hasErrors">
+    <div *ngIf="isFormClicked && hasErrors">
       <small *ngIf="firstnameValue && lastnameValue.length > 255">
         Le prénom ne doit pas comporter plus de
         <strong>255 caractères</strong>.
@@ -135,7 +135,7 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <div *ngIf="isFormSubmitted && hasErrors">
+    <div *ngIf="isFormClicked && hasErrors">
       <small *ngIf="!validateEmail()">
         Renseigner un email au bon format
         <strong>bon format</strong>.
@@ -159,7 +159,7 @@
         (keyup)="changePhoneValue($event)"
       />
     </mat-form-field>
-    <div *ngIf="isFormSubmitted && hasErrors">
+    <div *ngIf="isFormClicked && hasErrors">
       <small *ngIf="validatePhone()">
         Merci d'entrer un numéro de téléphone à
         <strong>10 chiffres</strong>.</small
@@ -191,7 +191,7 @@
         >
       </mat-select>
     </mat-form-field>
-    <div *ngIf="isFormSubmitted && hasErrors">
+    <div *ngIf="isFormClicked && hasErrors">
       <small *ngIf="!themeValue">
         Le thème est <strong>obligatoire</strong>.</small
       >
@@ -209,7 +209,7 @@
         (keyup)="changeMessageValue($event)"
       ></textarea>
     </mat-form-field>
-    <div *ngIf="hasErrors && isFormSubmitted">
+    <div *ngIf="hasErrors && isFormClicked">
       <small *ngIf="messageValue && messageValue.length > 1000">
         Le message ne doit pas comporter plus de
         <strong>1000 caractères</strong>.
@@ -231,11 +231,19 @@
     id="name"
     value="http://localhost:4200//formulaire-envoye"
   />
-  <button
-    [type]="checkErrors() ? 'submit' : 'button'"
-    (click)="changeSubmitted()"
-    class="btn submit"
-  >
-    ENVOYER
-  </button>
+  <div class="button-wrapper">
+    <button
+      [type]="checkErrors() ? 'submit' : 'button'"
+      (click)="changeSubmitted()"
+      class="button submit"
+    >
+      ENVOYER
+    </button>
+    <button
+      [type]="checkErrors() ? 'submit' : 'button'"
+      class="backdrop"
+      (click)="changeSubmitted()"
+    ></button>
+  </div>
 </form>
+<app-loader [booleanVisibilityInLoarder]="isLoaderVisible"></app-loader>

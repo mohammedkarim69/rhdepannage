@@ -1,13 +1,67 @@
 @import "./variables.scss";
 
-.btn {
-  border-radius: $border-radius;
-  border: 1px solid $black;
-  padding: $normal-padding;
-  font-size: $double-font-size;
+.button-wrapper {
+  position: relative;
+  display: inline-block;
 }
 
-.submit {
-  background-color: $yellow;
-  box-shadow: 2px 2px 8px $black;
+.button {
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 1) 100%);
+  border: 0px;
+  cursor: pointer;
+  outline: 0px;
+  padding: 0 2px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  box-shadow: $yellow 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  z-index: 500;
 }
+
+.backdrop {
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  background: radial-gradient(circle at center, transparent 0%, #000000 50%),
+    linear-gradient(to top, transparent 0%, $yellow 100%),
+    linear-gradient(to bottom, transparent 0%, $yellow 100%),
+    linear-gradient(to left, transparent 0%, $yellow 100%),
+    linear-gradient(to right, transparent 0%, $yellow 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all ease-in-out 0.5s;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover + .backdrop {
+  // top: 48%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: rotate(15deg) translateX(-50%) translateY(-50%);
+}
+
+.backdrop:hover {
+  transform: rotate(15deg) translateX(-50%) translateY(-50%);
+}
+
+.button:active,
+.button:active + .backdrop {
+  box-shadow: none;
+}
+
+// .submit {
+//   background-color: $yellow;
+// }
