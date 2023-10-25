@@ -1,4 +1,5 @@
 @import "../scss/variables.scss";
+
 img {
   width: 100vw;
   height: calc($mobile-h1-component);
@@ -27,33 +28,43 @@ p {
 @media screen and (min-width: 768px) {
   .test {
     flex-direction: row;
-    justify-content: space-evenly;
-    // width: 100vw;
-    //height: 30vh;
-  }
+    justify-content: space-between;
 
+    //height: 30vh;
+    background-color: $white;
+  }
+  .texte {
+    width: 80vw;
+  }
   img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     border: 2px solid $yellow;
   }
 
   p {
-    height: 40%;
-    width: 40%;
-    margin: 0;
-    font-size:16px;
+    // height: 100%;
+    // width: 50%;
+    color: $black;
+    font-size: 16px;
     text-align: center;
-    padding-top: 6vh;
+  
   }
   h3 {
     width: 100vw;
+    text-decoration: underline $yellow;
   }
 
-  .services-container-1 ,.services-container-2 ,.services-container-3  {
+  .services-container-1,
+  .services-container-2,
+  .services-container-3 {
+    display: flex;
+    align-items: center;
     flex-direction: column;
   }
-  .services-container-1 .title h3,.services-container-2 .title h3,.services-container-3 .title h3 {
+  .services-container-1 .title h3,
+  .services-container-2 .title h3,
+  .services-container-3 .title h3 {
     text-align: center;
     border: none;
   }
@@ -63,14 +74,17 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-
-  p {
-    height: 40%;
-    width: 40%;
-    margin: 0;
-    
-    text-align: center;
-    padding-top: 12vh;
+  img {
+    width: 50%;
+    height: 50%;
+    border: 2px solid $yellow;
   }
-
+  p {
+    height: 50%;
+    width: 50%;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10vh;
+  }
 }
