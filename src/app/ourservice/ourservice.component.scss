@@ -15,7 +15,6 @@ h3 {
 }
 p {
   margin: 24px 0;
-  
 }
 
 .container {
@@ -28,52 +27,50 @@ p {
 @media screen and (min-width: 768px) {
   .test {
     flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-    height: 30vh;
+    justify-content: space-evenly;
+    // width: 100vw;
+    //height: 30vh;
   }
 
   img {
-    width: 30vw;
-    height: 30vh;
+    width: 40%;
+    height: 40%;
+    border: 2px solid $yellow;
   }
 
   p {
-    height: 30vh;
-    width: 30vw;
+    height: 40%;
+    width: 40%;
+    margin: 0;
+    font-size:16px;
+    text-align: center;
+    padding-top: 6vh;
   }
-  h3{
-    width:50vw ;
+  h3 {
+    width: 100vw;
+  }
+
+  .services-container-1 ,.services-container-2 ,.services-container-3  {
+    flex-direction: column;
+  }
+  .services-container-1 .title h3,.services-container-2 .title h3,.services-container-3 .title h3 {
+    text-align: center;
+    border: none;
+  }
+  .services-container-2 .test {
+    flex-direction: row-reverse;
+  }
 }
 
-.services-container-1   {  
-  flex-direction: column;  
-}
-.services-container-1  .title h3 {
-  align-content: end;
-  text-align: end;
-  border: 0;  
-}
-.services-container-2  { 
-  flex-direction: column;  
-}
-.services-container-2  .title h3 {
-  align-content: end;
-  text-align: end;
-  border: 0;  
-}
+@media screen and (min-width: 1200px) {
 
-.services-container-3  {
-  
-  flex-direction: column; 
-}
-.services-container-3  .title h3 {
-  align-content: end;
-  text-align: end;
-  border: 0;  
-}
-
-
-
+  p {
+    height: 40%;
+    width: 40%;
+    margin: 0;
+    
+    text-align: center;
+    padding-top: 12vh;
+  }
 
 }
