@@ -208,7 +208,7 @@ table {
 
 html,
 body {
-  height: 100%;
+  // height: 100%;
 }
 body {
   margin: 0;
@@ -258,6 +258,7 @@ p {
 .gallery-page,
 .home-page,
 .services-page,
+.form-redirect-page,
 .p404-page {
   margin-top: calc($mobile-header + $mobile-h1-component - 2px);
   padding: $double-padding;
@@ -279,6 +280,7 @@ p {
   .gallery-page,
   .home-page,
   .services-page,
+  .form-redirect-page,
   .p404-page {
     margin-top: calc($desktop-header + $desktop-h1-component - 2px);
     padding: $four-padding;
@@ -313,6 +315,7 @@ p {
   .gallery-page,
   .home-page,
   .services-page,
+  .form-redirect-page,
   .p404-page {
     padding: 80px 160px 80px 160px;
   }

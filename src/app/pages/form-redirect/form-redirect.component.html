@@ -1,5 +1,9 @@
 <app-h1-component [titleInComponent]="title"></app-h1-component>
 <div class="form-redirect-page flex column center">
-  <h2 routerLink="/">Revenir page d'acceuil</h2>
-  <button class="btn submit" routerLink="/">Cliquez ici</button>
+  <h2>Revenir page d'acceuil</h2>
+
+  <div class="button-wrapper">
+    <button routerLink="/" class="button">Cliquez ici</button>
+    <button routerLink="/" class="backdrop"></button>
+  </div>
 </div>
