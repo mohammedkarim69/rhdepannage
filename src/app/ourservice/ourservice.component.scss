@@ -1,28 +1,79 @@
 @import "../scss/variables.scss";
 img {
-  width: 100%;
-  height: calc($mobile-h1-component)
+  width: 100vw;
+  height: calc($mobile-h1-component);
 }
 
-h3{
+h3 {
   text-align: center;
   border: 1px solid $yellow;
-  margin: 20px 0;
+  margin: 24px 0;
 }
 
 .texte p {
   text-align: center;
-
 }
-p{
-  margin: 20px 0;
+p {
+  margin: 24px 0;
+  
 }
 
 .container {
-
   padding: $normal-padding;
+}
+.test {
+  flex-direction: column;
+}
 
+@media screen and (min-width: 768px) {
+  .test {
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  img {
+    width: 30vw;
+    height: 30vh;
+  }
+
+  p {
+    height: 30vh;
+    width: 30vw;
+  }
+  h3{
+    width:50vw ;
+}
+
+.services-container-1   {  
+  flex-direction: column;  
+}
+.services-container-1  .title h3 {
+  align-content: end;
+  text-align: end;
+  border: 0;  
+}
+.services-container-2  { 
+  flex-direction: column;  
+}
+.services-container-2  .title h3 {
+  align-content: end;
+  text-align: end;
+  border: 0;  
+}
+
+.services-container-3  {
+  
+  flex-direction: column; 
+}
+.services-container-3  .title h3 {
+  align-content: end;
+  text-align: end;
+  border: 0;  
 }
 
 
 
+
+}
