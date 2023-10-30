@@ -58,11 +58,7 @@ import { OurhomeservicesComponent } from './ourhomeservices/ourhomeservices.comp
     OurvaluesComponent,
     OurserviceComponent,
     LoaderComponent,
-    OurhomeservicesComponent,
-  
-  
-
-    
+    OurhomeservicesComponent
   ],
 
   imports: [
