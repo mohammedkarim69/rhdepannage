@@ -1,0 +1,43 @@
+@import "../../scss/variables.scss";
+
+.p404-page {
+  height: calc(
+    100vh - $mobile-header - $mobile-h1-component - $height-headband -
+      var(--height-footer) - 18px
+  );
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .circle-gradient {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, transparent,  black 80%), url('../../../assets/images/sens-interdit.jpg');
+    background-size: cover;
+    background-position: center; 
+    // border-radius: 50%; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p404-page {
+    height: 100%;
+    img {
+      margin-top: $half-margin;
+      max-height: 300px;
+    }
+    .button-wrapper {
+      margin-top: $half-margin;
+      margin-bottom: $normal-margin;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .p404-page {
+    .button-wrapper {
+      margin-top: $half-margin;
+      margin-bottom: $normal-margin;
+    }
+  }
+}

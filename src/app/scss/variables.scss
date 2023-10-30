@@ -4,16 +4,17 @@
 */
 $white: #ffffff;
 $black: #000000;
-$yellow: rgba(255, 255, 0, 0.897);
+$yellow: rgba(255, 255, 0, 0.63);
+$yellow-light: rgba(255, 255, 0, 0.897);
 
-// ----- padding ----- 
+// ----- padding -----
 $normal-padding: 8px;
 $double-padding: 2 * $normal-padding;
 $triple-padding: 3 * $normal-padding;
 $four-padding: 4 * $normal-padding;
 $half-padding: calc($normal-padding / 2);
 
-// ----- margin ----- 
+// ----- margin -----
 $normal-margin: 8%;
 $double-margin: 2 * $normal-margin;
 $triple-margin: 3 * $normal-margin;
@@ -21,16 +22,16 @@ $four-margin: 4 * $normal-margin;
 $half-margin: calc($normal-margin / 2);
 
 // ----- border radius -----
-$border-radius : 8px;
+$border-radius: 8px;
 $half_openBorderRadius: 4px;
-$double-border-radius : 16px;
+$double-border-radius: 16px;
 
 // ----- border radiusfont sizeadius : 8px;
 $normal-font-size: 1rem;
-$double-font-size : 1.5 * $normal-font-size;
-$triple-font-size : 2 * $normal-font-size;
-$fourth-font-size : 3 * $normal-font-size;
-$max-font-size : 4 * $normal-font-size;
+$double-font-size: 1.5 * $normal-font-size;
+$triple-font-size: 2 * $normal-font-size;
+$fourth-font-size: 3 * $normal-font-size;
+$max-font-size: 4 * $normal-font-size;
 
 // ----- height-header;
 $mobile-header: 60px;
@@ -39,3 +40,11 @@ $desktop-header: 120px;
 // ----- height-h1-component;
 $mobile-h1-component: 240px;
 $desktop-h1-component: 480px;
+
+// ----- height-headband-yellow-black;
+$height-headband: 16px;
+
+// ----- height-footer;
+:root {
+  --height-footer: 0px;
+}
