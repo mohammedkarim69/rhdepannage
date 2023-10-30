@@ -34,6 +34,7 @@ import { OurserviceComponent } from './ourservice/ourservice.component';
 import { LoaderComponent } from './components/loader/loader.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     FormRedirectComponent,
     OurvaluesComponent,
     OurserviceComponent,
-    LoaderComponent
+    LoaderComponent,
+
     
   ],
 
