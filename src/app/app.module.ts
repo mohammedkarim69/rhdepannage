@@ -31,6 +31,7 @@ import { H1ComponentComponent } from './components/h1-component/h1-component.com
 import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
 import { OurvaluesComponent } from './ourvalues/ourvalues.component';
 import { OurserviceComponent } from './ourservice/ourservice.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { OurserviceComponent } from './ourservice/ourservice.component';
     FormRedirectComponent,
     OurvaluesComponent,
     OurserviceComponent,
+    LoaderComponent
     
   ],
 
