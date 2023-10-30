@@ -32,6 +32,9 @@ import { FormRedirectComponent } from './pages/form-redirect/form-redirect.compo
 import { OurvaluesComponent } from './ourvalues/ourvalues.component';
 import { OurserviceComponent } from './ourservice/ourservice.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { OurhomeservicesComponent } from './ourhomeservices/ourhomeservices.component';
+
+
 
 
 
@@ -55,6 +58,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     OurvaluesComponent,
     OurserviceComponent,
     LoaderComponent,
+    OurhomeservicesComponent,
+  
+  
 
     
   ],
