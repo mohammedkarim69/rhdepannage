@@ -1,8 +1,9 @@
+
 <div
-  *ngFor="let service of myServices; let i = index" 
-  class="image-texte flex column "
-  >
- <!-- [ngStyle]="{'flex-direction':(i % 2 === 0) ?'row-reverse' :  'row' }" -->
+  *ngFor="let service of myServices; let index = index" 
+  class="image-texte   "
+  [ngClass]="index %2 == 0 ?'flex row-reverse' :'flex'">
+ 
   
   <img src="{{ service.img }}" >
   <div>
@@ -12,4 +13,9 @@
     </p>
   </div>
 </div>
+
+
+
+
 <app-ourvalues></app-ourvalues>
+
