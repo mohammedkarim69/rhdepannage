@@ -5,6 +5,9 @@
   background-color: $white;
   overflow: hidden;
   padding-bottom: 4vh;
+  img {
+    width: 100vw;
+  }
   div {
     margin: auto;
     padding: 0 5vh;
@@ -19,43 +22,35 @@
   }
 }
 @media screen and (min-width: 768px) {
-
- 
-  
   .image-texte {
-    
     flex-direction: row;
     padding-bottom: 0vh;
     border: 1px solid $yellow;
     img {
       width: 50%;
-    
-      
     }
     div {
       padding: 0 5% 5px;
-      
+
       h3 {
         font-size: 20px;
-        padding-top:5px ;
+        padding-top: 5px;
       }
     }
     p {
       height: 100%;
       font-size: 16px;
-      
     }
   }
-  .row-reverse{
+  .row-reverse {
     flex-direction: row-reverse;
   }
 }
 
 @media screen and (min-width: 1235px) {
   .image-texte {
-  
     padding-bottom: 0vh;
-    
+
     img {
       width: 50%;
       //height: 100%;
@@ -68,7 +63,6 @@
       }
     }
     p {
-      
       font-size: 20px;
     }
   }
