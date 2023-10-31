@@ -27,31 +27,38 @@
       height: 100%;
     }
     div {
-      padding: 2vh;
+      padding: 0 5% 5px;
       h3 {
-        font-size: 24px;
+        font-size: 20px;
+        padding-top:5px ;
       }
     }
     p {
       height: 100%;
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 }
 
-@media screen and (min-width: 1234px) {
+@media screen and (min-width: 1235px) {
   .image-texte {
     flex-direction: row;
     padding-bottom: 0vh;
-    width: 80vw;
-    img {
-      width: 40vw;
-      height: 100%;
-    }
     
+    img {
+      width: 50%;
+      //height: 100%;
+    }
+    div {
+      width: 50%;
+      padding: 0 5% 5px;
+      h3 {
+        font-size: 28px;
+      }
+    }
     p {
-      width: 100%;
-      font-size: 22px;
+      
+      font-size: 20px;
     }
   }
 }

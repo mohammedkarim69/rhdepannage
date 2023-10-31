@@ -1,8 +1,10 @@
 <div
-  *ngFor="let service of myServices; let i = index"
-  class="image-texte flex column " >
+  *ngFor="let service of myServices; let i = index" 
+  class="image-texte flex column "
+  >
+ <!-- [ngStyle]="{'flex-direction':(i % 2 === 0) ?'row-reverse' :  'row' }" -->
   
-  <img src="{{ service.img }}" />
+  <img src="{{ service.img }}" >
   <div>
     <h3>{{ service.title }}</h3>
     <p>
