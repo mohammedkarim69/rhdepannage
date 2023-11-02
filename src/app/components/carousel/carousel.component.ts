@@ -7,13 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CarouselComponent {
   constructor() {  
-
     setInterval(() => {    
-
          this.currentIndex = (this.currentIndex + 1) % this.images.length;    
-
          }, 4000);
-
         }
 
   images = ['../../assets/images/panne-camion-transporteur-pendant-travail-utilisant-transporteur-ceinture-verrouillee-autre-voiture-verte.jpg',
