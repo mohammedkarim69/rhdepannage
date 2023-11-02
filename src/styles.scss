@@ -256,7 +256,7 @@ p {
 .home-page,
 .services-page,
 .form-redirect-page,
-.p404-page {
+.p404-page, .site-map-page {
   margin-top: calc($mobile-header + $mobile-h1-component - 2px);
   padding: $double-padding;
   background: linear-gradient(
@@ -269,6 +269,13 @@ p {
   background-color: $black;
 }
 
+.underline {
+  height: 4px;
+  width: 50px;
+  background-color: $yellow;
+  box-shadow: 0px 2px 8px $black;
+  margin: $half-margin 0;
+}
 // Breackpoint list
 // Mobiles vers Tablettes :
 @media screen and (min-width: 768px) {
@@ -278,7 +285,7 @@ p {
   .home-page,
   .services-page,
   .form-redirect-page,
-  .p404-page {
+  .p404-page, .site-map-page {
     margin-top: calc($desktop-header + $desktop-h1-component - 2px);
     padding: $four-padding;
   }
@@ -313,7 +320,7 @@ p {
   .home-page,
   .services-page,
   .form-redirect-page,
-  .p404-page {
+  .p404-page, .site-map-page {
     padding: 80px 160px 80px 160px;
   }
 }

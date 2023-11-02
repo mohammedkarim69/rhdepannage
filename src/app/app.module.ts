@@ -32,6 +32,9 @@ import { FormRedirectComponent } from './pages/form-redirect/form-redirect.compo
 import { OurvaluesComponent } from './ourvalues/ourvalues.component';
 import { OurserviceComponent } from './ourservice/ourservice.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
+import { SiteMapComponent } from './pages/site-map/site-map.component';
+import { InterventionComponent } from './components/intervention/intervention.component';
 import { OurhomeservicesComponent } from './ourhomeservices/ourhomeservices.component';
 
 
@@ -58,6 +61,9 @@ import { OurhomeservicesComponent } from './ourhomeservices/ourhomeservices.comp
     OurvaluesComponent,
     OurserviceComponent,
     LoaderComponent,
+    PresentationComponent,
+    SiteMapComponent,
+    InterventionComponent,
     OurhomeservicesComponent,
   
   
