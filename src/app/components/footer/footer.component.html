@@ -1,10 +1,13 @@
 <app-headband-black-yellow></app-headband-black-yellow>
 <footer>
-  <section class="half-width">
+  <section class="flex column half-width">
     <h6>Accès Rapide</h6>
     <ul>
       <li *ngFor="let item of menuList" [routerLink]="[item.routerLink]">
         {{ item.name }}
+      </li>
+      <li routerLink="/plan-du-site">
+        Plan du site
       </li>
     </ul>
   </section>
@@ -26,5 +29,16 @@
     </a>
     <h6 class="padding">Horaires</h6>
     <p>Disponibilités : 7/7 24/24</p>
+  </section>
+  <section class="cities flex">
+    <p>
+      Dépannage à
+      <span
+        *ngFor="let city of cityList"
+        [routerLink]="[city.routerLink]"
+        class="pointer"
+        >{{ city.name }},
+      </span>
+    </p>
   </section>
 </footer>
