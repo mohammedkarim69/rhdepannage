@@ -1,0 +1,47 @@
+@import "../../scss/variables.scss";
+
+.intervention-component {
+  width: 100%;
+  flex-direction: column;
+  .intervention-map {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 400px;
+    height: 100vh;
+    max-height: 400px;
+    margin: $normal-margin 0;
+    img {
+      z-index: 4;
+      width: 400px;
+      height: 100vh;
+      max-height: 400px;
+    }
+    .map-point {
+      z-index: 5;
+      color: $yellow;
+      position: relative;
+      right: -200px;
+      top: -200px;
+      border-radius: 25px;
+      text-shadow: 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+        0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+        0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+        0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+        0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
+        0 0 0.7px $black;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intervention-component {
+    flex-direction: row;
+    .intervention-description {
+      width: calc(100% * (2 / 3));
+    }
+    .intervention-map {
+      scale: 0.8;
+      width: calc(100% * (1 / 3));
+    }
+  }
+}

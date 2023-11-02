@@ -1,0 +1,16 @@
+@import "../../scss/variables.scss";
+
+.site-map-page {
+  ul,
+  ol {
+    li {
+      width: 40vw;
+      color: $white;
+    }
+    ul{
+      li{
+        padding-left: $double-padding;
+      }
+    }
+  }
+}

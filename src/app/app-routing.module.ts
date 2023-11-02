@@ -7,6 +7,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
+import { SiteMapComponent } from './pages/site-map/site-map.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,8 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'formulaire-envoye', component: FormRedirectComponent },
   { path: 'page-404', component: Page404Component },
+  { path: 'accueil/:city', component: HomeComponent },
+  { path: 'plan-du-site', component: SiteMapComponent },
   { path: '', component: HomeComponent },
   { path: '**', redirectTo: 'page-404' },
 ];

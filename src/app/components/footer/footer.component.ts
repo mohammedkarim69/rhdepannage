@@ -1,6 +1,6 @@
 import { Component, ElementRef } from '@angular/core';
 import { Menu } from 'src/app/shared/interfaces/Menu';
-import { NAVBAR_MENU } from 'src/app/shared/variables';
+import { CITY_LIST, NAVBAR_MENU } from 'src/app/shared/variables';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,12 +9,15 @@ import { NAVBAR_MENU } from 'src/app/shared/variables';
 export class FooterComponent {
   menuList: Menu[] = NAVBAR_MENU;
   heightFooter!: number;
+  cityList: Menu[] = CITY_LIST;
 
   constructor(private el: ElementRef) {}
+
   ngOnInit() {
     document.documentElement.style.setProperty(
       '--height-footer',
       this.el.nativeElement.offsetHeight + 'px'
     );
   }
+  
 }
