@@ -34,6 +34,7 @@ import { OurserviceComponent } from './ourservice/ourservice.component';
 import { LoaderComponent } from './components/loader/loader.component';
 
 import { ServicecontainerComponent } from './components/servicecontainer/servicecontainer.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 
@@ -60,7 +61,8 @@ import { ServicecontainerComponent } from './components/servicecontainer/service
     OurserviceComponent,
     LoaderComponent,
     
-    ServicecontainerComponent
+    ServicecontainerComponent,
+          CarouselComponent
   ],
 
   imports: [
