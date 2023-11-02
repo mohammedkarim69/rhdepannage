@@ -2,7 +2,7 @@
   width: 100%;
   height: 400px; /* Ajustez selon vos besoins */
   overflow: hidden;
-  background-color: rgb(236, 229, 229);
+  background-color:transparent;
 }
 
 .carousel-image {
@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
   animation-name: exemple ;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count:infinite ;
   animation-timing-function: ease-in-out;
 }
