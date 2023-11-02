@@ -35,6 +35,8 @@ import { LoaderComponent } from './components/loader/loader.component';
 
 import { ServicecontainerComponent } from './components/servicecontainer/servicecontainer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { SiteMapComponent } from './pages/site-map/site-map.component';
+import { InterventionComponent } from './components/intervention/intervention.component';
 
 
 
@@ -62,7 +64,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     LoaderComponent,
     
     ServicecontainerComponent,
-          CarouselComponent
+          CarouselComponent,
+          SiteMapComponent,
+          InterventionComponent
   ],
 
   imports: [
