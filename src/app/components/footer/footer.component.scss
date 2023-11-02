@@ -7,13 +7,32 @@ footer {
   color: $white;
   flex-wrap: wrap;
   padding: $double-padding;
-  .half-width {
-    width: 50%;
-  }
   section {
+    ul {
+      li {
+        padding-bottom: $normal-padding;
+      }
+    }
     h6 {
       padding-bottom: $normal-padding;
       font-size: $double-font-size;
+      color: $yellow;
+    }
+  }
+  .half-width {
+    width: 50%;
+  }
+  .cities {
+    padding-top: $double-padding;
+    flex-wrap: wrap;
+    height: 8vh;
+    overflow-y: scroll;
+    p {
+      font-size: calc($normal-font-size * 1.5);
+      padding-right: $half-padding;
+      transition: 0.2s;
+    }
+    span:hover {
       color: $yellow;
     }
   }
@@ -23,17 +42,24 @@ footer {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   footer {
     padding: $triple-padding;
+    .half-width {
+      width: 33%;
+    }
     section {
+      width: 33%;
       h6 {
         font-size: $triple-font-size;
       }
       .padding {
         padding-top: $double-padding;
       }
+    }
+    .cities {
+      height: 100%;
+      max-height: 240px;
     }
   }
 
@@ -46,6 +72,6 @@ footer {
 
 @media screen and (min-width: 992px) {
   footer {
-    padding : $triple-padding * 2;
+    padding: $triple-padding * 2;
   }
 }

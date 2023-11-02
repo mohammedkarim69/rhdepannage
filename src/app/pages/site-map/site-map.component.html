@@ -1,0 +1,17 @@
+<app-h1-component [titleInComponent]="title"></app-h1-component>
+<div class="site-map-page flex column center">
+  <ul>
+    <li *ngFor="let item of menu" [routerLink]="[item.routerLink]">
+      {{ item.name }}
+      <ul *ngIf="item.name === 'Services'">
+        <li *ngFor="let service of servicesList" class="indentation">{{ service }}</li>
+      </ul>
+    </li>
+  </ul>
+  <span class="underline"></span>
+  <ol>
+    <li *ngFor="let city of citiesList" [routerLink]="[city.routerLink]">
+      Dépannage à {{ city.name }}
+    </li>
+  </ol>
+</div>

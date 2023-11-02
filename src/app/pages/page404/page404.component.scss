@@ -5,6 +5,7 @@
     100vh - $mobile-header - $mobile-h1-component - $height-headband -
       var(--height-footer) - 18px
   );
+
   h2 {
     width: 100%;
     text-align: center;
@@ -16,7 +17,6 @@
       url("../../../assets/images/sens-interdit.jpg");
     background-size: cover;
     background-position: center;
-    // border-radius: 50%;
   }
 }
 

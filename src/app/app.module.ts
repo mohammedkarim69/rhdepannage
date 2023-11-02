@@ -31,6 +31,9 @@ import { H1ComponentComponent } from './components/h1-component/h1-component.com
 import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
 import { OurvaluesComponent } from './ourvalues/ourvalues.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
+import { SiteMapComponent } from './pages/site-map/site-map.component';
+import { InterventionComponent } from './components/intervention/intervention.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     FormRedirectComponent,
     OurvaluesComponent,
     LoaderComponent,
+    PresentationComponent,
+    SiteMapComponent,
+    InterventionComponent,
   ],
 
   imports: [
