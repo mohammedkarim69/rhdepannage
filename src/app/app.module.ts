@@ -30,10 +30,16 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { H1ComponentComponent } from './components/h1-component/h1-component.component';
 import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
 import { OurvaluesComponent } from './ourvalues/ourvalues.component';
+import { OurserviceComponent } from './ourservice/ourservice.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { SiteMapComponent } from './pages/site-map/site-map.component';
 import { InterventionComponent } from './components/intervention/intervention.component';
+import { OurhomeservicesComponent } from './ourhomeservices/ourhomeservices.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -53,10 +59,16 @@ import { InterventionComponent } from './components/intervention/intervention.co
     H1ComponentComponent,
     FormRedirectComponent,
     OurvaluesComponent,
+    OurserviceComponent,
     LoaderComponent,
     PresentationComponent,
     SiteMapComponent,
     InterventionComponent,
+    OurhomeservicesComponent,
+  
+  
+
+    
   ],
 
   imports: [
