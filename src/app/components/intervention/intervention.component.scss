@@ -15,6 +15,7 @@
       width: 400px;
       height: 100vh;
       max-height: 400px;
+    }
     .map-point {
       z-index: 5;
       color: $yellow;
@@ -32,7 +33,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .intervention-component {
     flex-direction: row;
     .intervention-description {
