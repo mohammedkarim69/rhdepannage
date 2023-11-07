@@ -8,15 +8,12 @@
     border-radius: 100%;
     width: 380px;
     height: 380px;
-    //max-height: 400px;
     margin: $double-margin;
 
     img {
-      //z-index: 4;
       border-radius: 50%;
       width: 470px;
       height: 420px;
-      //max-height: 380px;
       padding: 0px 10px;
     }
     // .map-point {
@@ -45,7 +42,6 @@
 
         border-radius: 100%;
       }
-    
     }
   }
 }
