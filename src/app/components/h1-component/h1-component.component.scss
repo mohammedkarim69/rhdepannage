@@ -6,7 +6,7 @@
   z-index: -1; /* Placez-le en arrière-plan */
   top: calc($mobile-header);
   left: 0;
-  filter: blur(1px) brightness(20%);
+  filter: blur(1px) brightness(40%);
   min-height: $mobile-h1-component;
 }
 

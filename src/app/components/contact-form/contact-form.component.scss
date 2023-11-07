@@ -37,16 +37,14 @@ form {
     width: 100%;
     text-align: center;
   }
-
-  p {
-    width: 100%;
-  }
   .width-to-adapt {
-    width: 50%;
+    width: 60%;
     margin-bottom: $half-margin;
   }
 }
-
+p {
+  width: 100%;
+}
 i {
   border-radius: 25px;
   text-shadow: 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,

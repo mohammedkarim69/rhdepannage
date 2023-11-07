@@ -26,10 +26,6 @@ export const NAVBAR_MENU: Menu[] = [
 
 export const CITY_LIST: Menu[] = [
   {
-    name: 'Sablons',
-    routerLink: '/',
-  },
-  {
     name: 'Roanne',
     routerLink: '/accueil/roanne',
   },
@@ -252,6 +248,10 @@ export const CITY_LIST: Menu[] = [
   {
     name: 'Vienne',
     routerLink: '/accueil/vienne',
+  },
+  {
+    name: 'Sablons',
+    routerLink: '/',
   },
 ];
 export const SENDGRID_API_KEY =

@@ -1,5 +1,5 @@
 @import "../scss/variables.scss";
-//@import "../../scss/variables.scss";
+
 .main-container {
 
   background-color: $black;
@@ -30,6 +30,7 @@ i {
   font-size: x-small;
   color: $black;
 }
+
 
 //----------------------------media queries --------------------------------//
 @media screen and (min-width: 768px) {
