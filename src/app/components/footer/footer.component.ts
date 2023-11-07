@@ -18,6 +18,7 @@ export class FooterComponent {
       '--height-footer',
       this.el.nativeElement.offsetHeight + 'px'
     );
+    this.cityList.reverse();
   }
   
 }
