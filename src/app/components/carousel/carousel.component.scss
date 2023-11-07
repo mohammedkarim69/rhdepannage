@@ -1,0 +1,69 @@
+@import "../../scss/variables.scss";
+
+.carousel-container {
+  width: 100%;
+  height: 90vh; 
+  overflow: hidden;
+  background-color: white;
+  margin: $double-margin 0;
+  
+}
+
+.title{
+  background-color: $black;
+  h3{
+      color: $white;
+  }
+}
+
+.carousel-image {
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  animation-name: exemple;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+.service-container{
+  height: 30vh;
+  background-color: $white;
+   
+  .service{
+    height: 10vh;
+    text-align: center;
+    background-color:$black;
+    color: $white;
+
+  }
+  .service:hover{
+    background-color:$yellow;
+    color: $black;
+  }
+}
+
+
+@keyframes exemple {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+
+  // .carousel-image{
+  //   width: 70vh;
+  // }
+  
+}
