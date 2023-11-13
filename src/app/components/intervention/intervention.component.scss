@@ -17,6 +17,9 @@
       padding: 0px 10px;
     }
   }
+  p {
+    text-align: justify;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -32,13 +35,12 @@
   .intervention-component {
     width: 90vh;
     flex-direction: column;
-
     display: flex;
     .intervention-description {
       display: flex;
       flex-direction: row;
       width: 100vw;
-      justify-content: space-evenly;
+      justify-content: space-around;
 
       .paragraphe {
         width: 40vw;
