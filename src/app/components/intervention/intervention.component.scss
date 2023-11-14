@@ -1,9 +1,16 @@
 @import "../../scss/variables.scss";
 
-
 .intervention-component {
   width: 100%;
   flex-direction: column;
+
+  .title {
+    h2 {
+      color: $white;
+      text-align: center;
+    }
+  }
+
   .intervention-map {
     overflow: hidden;
     border-radius: 100%;
@@ -37,6 +44,7 @@
     width: 90vh;
     flex-direction: column;
     display: flex;
+
     .intervention-description {
       display: flex;
       flex-direction: row;
