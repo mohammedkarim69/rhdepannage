@@ -12,6 +12,7 @@ h2 {
 
 p {
   margin: 2vh;
+  text-align: justify;
 }
 
 .home-page {
@@ -21,14 +22,18 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+
   .title {
     width: 100vw;
   }
+  p {
+    margin: 2vh;
+    text-align: justify;
+  }
 
-  .ul{
-    
+  .ul {
     justify-content: flex-start;
     width: 80%;
-
+    font-size: 1.5rem;
   }
 }
