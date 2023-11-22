@@ -2,7 +2,7 @@
 
 .main-container {
   z-index: 1000;
-  position:fixed;
+  position: fixed;
   display: flex;
   background-color: $black;
   height: $mobile-header;
@@ -25,14 +25,14 @@
 
 .phone {
   width: 100%;
-  justify-content: end;
+  justify-content: space-between
 }
-
 
 .logo {
   height: calc($mobile-header / 1.5);
   background-color: $yellow;
-  border-radius: 25px;
+  //border-radius: 25px;
+  width: 25vw;
 }
 
 .logo img {
@@ -93,17 +93,12 @@
 .navdesktop {
   display: none;
 }
-.social-links,.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
 .social-btn {
+  position: sticky;
+  //bottom: 0;
   cursor: pointer;
   height: 50px;
-  width: 50px;
+  width: 100%;
   font-family: 'Titillium Web', sans-serif;
   color: white;
   border-radius: 10px;
@@ -112,6 +107,7 @@
   margin: 5px;
   transition: 0.3s;
   justify-content: center;
+
 }
 
 .social-btn svg {
@@ -126,25 +122,26 @@
   text-align: center;
   margin-left: 5px;
 }
-
-.social-btn:hover {
-  width: 150px;
-  border-radius: 5px;
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  width: 100%;
 }
-
-.social-btn:hover span {
-  padding: 2px;
-  width: 160px;
+.flex-center{
+  display: flex;
+  flex-direction: column;
 }
-
-#google svg {
-  fill: #1da1f2;
+.star{
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  p{
+    font-size: 10pxx-;
+  }
+  
 }
-
-
-
-
-
 
 //-------------------------media queries------------------------//
 @media screen and (min-width: 768px) {
@@ -166,8 +163,6 @@
     height: calc($desktop-header / 2.5);
     width: calc($desktop-header / 2.5);
   }
-
- 
 
   // .logo img {
   //   height: 100%;
@@ -201,10 +196,7 @@
     display: flex;
     justify-content: space-between;
   }
-
 }
 
 @media screen and (min-width: 900px) {
-
-  
 }

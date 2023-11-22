@@ -1,4 +1,7 @@
 @import "../../scss/variables.scss";
+.title{
+  padding-top: $four-padding
+}
 .ul {
   color: white;
   list-style: disc;
@@ -33,6 +36,7 @@ p {
 
   .title {
     width: 100vw;
+    padding-top: $four-padding
   }
   p {
   margin: 2vh;
