@@ -1,41 +1,106 @@
 @import "../../scss/variables.scss";
 
+// .intro {
+//   height: 0vh;
+// }
+
 .blur-background {
   position: fixed;
   width: 100vw;
   z-index: -1; /* Placez-le en arrière-plan */
-  top: calc($mobile-header);
+  // top: calc($mobile-header);
+  top:80px;
   left: 0;
   filter: blur(1px) brightness(40%);
   min-height: $mobile-h1-component;
 }
 
-h1 {
+.intro {
   position: absolute;
   top: $mobile-header;
-  letter-spacing: 2px;
   height: calc($mobile-h1-component);
   color: $white;
-  font-size: $triple-font-size;
-  font-weight: bold;
   width: 100%;
   text-align: center;
-  background: linear-gradient(
-    0deg,
-    $black 0%,
-    transparent 40%,
-    transparent 60%,
-    $black 100%
-  );
+  // background: linear-gradient(
+  //   0deg,
+  //   $black 0%,
+  //   transparent 40%,
+  //   transparent 60%,
+  //   $black 100%
+  // );
+  h1 {
+    font-size: $triple-font-size;
+    font-weight: bold;
+  }
 }
+
+p {
+  padding-top: 2vh;
+  font-size: $normal-font-size;
+  width: 100%;
+  //text-align: center;
+}
+
+// .social-btn {
+//   position: sticky;
+//   //bottom: 0;
+//   cursor: pointer;
+//   height: 50px;
+//   width: 100%;
+//   font-family: 'Titillium Web', sans-serif;
+//   color: white;
+//   border-radius: 10px;
+//   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+//   background: black;
+//   margin: 5px;
+//   transition: 0.3s;
+//   justify-content: center;
+
+// }
+
+// .social-btn svg {
+//   height: 50px;
+//   width: 24px;
+// }
+
+// .social-btn span {
+//   width: 0px;
+//   overflow: hidden;
+//   transition: 0.3s;
+//   text-align: center;
+//   margin-left: 5px;
+// }
+// .social-links,.flex-center {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100vw;
+// }
+
+
+
+
+
+// #google svg {
+//   fill: #1da1f2;
+// }
 @media screen and (min-width: 768px) {
   .blur-background {
     top: calc($desktop-header);
     min-height: $desktop-h1-component;
   }
-  h1 {
+  .intro {
     top: $desktop-header;
-    font-size: $max-font-size;
+    font-size: $triple-font-size;
     height: calc($desktop-h1-component);
+    h1 {
+      font-size: $max-font-size;
+      font-weight: bold;
+    }
+  }
+  p {
+    top: $desktop-header;
+    font-size: $triple-font-size;
   }
 }

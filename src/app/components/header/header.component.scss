@@ -2,11 +2,11 @@
 
 .main-container {
   z-index: 1000;
-  position:fixed;
+  position: fixed;
   display: flex;
   background-color: $black;
   height: $mobile-header;
-  align-items: center;
+  //align-items: center;
   border: none;
   width: 100vw;
   top: 0;
@@ -24,20 +24,19 @@
 }
 
 .phone {
-  width: 100%;
-  justify-content: end;
+  //width: 100%;
+  justify-content: space-between
 }
 
-
 .logo {
-  height: calc($mobile-header / 1.5);
-  background-color: $yellow;
-  border-radius: 25px;
+  height: 80px;
+  color: $yellow;
+  font-size:20px ;
+
 }
 
 .logo img {
-  height: calc($mobile-header / 1.5);
-  width: calc($mobile-header / 1.5);
+  height: 100%
 }
 
 .navlistmobile {
@@ -93,14 +92,64 @@
 .navdesktop {
   display: none;
 }
+.social-btn {
+  //position: sticky;
+  //bottom: 0;
+  
+  height: 40px;
+  //width: 100px;
 
 
+}
+
+// .social-btn svg {
+//   padding-left: 15px;
+//   height: 100px;
+//   width: 24px;
+// }
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.flex-center{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.star{
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  //height: 100px;
+ 
+  
+}
+.parastar{
+  font-size: 15px;
+  font-style: italic;
+  color: $white;
+
+}
 //-------------------------media queries------------------------//
 @media screen and (min-width: 768px) {
   .navbarmobile {
     display: none;
   }
-  .phone {
+  // .phone {
+  //   display: none;
+  // }
+  .fa-phone{
     display: none;
   }
 
@@ -115,8 +164,6 @@
     height: calc($desktop-header / 2.5);
     width: calc($desktop-header / 2.5);
   }
-
- 
 
   // .logo img {
   //   height: 100%;
@@ -150,10 +197,7 @@
     display: flex;
     justify-content: space-between;
   }
-
 }
 
 @media screen and (min-width: 900px) {
-
-  
 }

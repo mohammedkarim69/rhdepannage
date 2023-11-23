@@ -3,6 +3,17 @@
 .intervention-component {
   width: 100%;
   flex-direction: column;
+  
+
+  .title {
+    h2 {
+      color: $white;
+      text-align: center;
+      margin-bottom: 2vh;
+      
+    }
+  }
+
   .intervention-map {
     overflow: hidden;
     border-radius: 100%;
@@ -16,31 +27,63 @@
       height: 420px;
       padding: 0px 10px;
     }
-    // .map-point {
-    //   z-index: 5;
-    //   color: $yellow;
-    //   position: relative;
-    //   right: -200px;
-    //   top: -200px;
-    //   border-radius: 25px;
-    // }
+  }
+  p {
+    text-align: justify;
   }
 }
 
 @media screen and (min-width: 768px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+
   .intervention-component {
+    width: 90vh;
     flex-direction: column;
+    display: flex;
 
-    .intervention-map {
-      border-radius: 50%;
-      height: 510px;
-      width: 500px;
+    .title{
+      width: 100vw;
+    }
 
-      img {
-        width: 610px;
-        height: 560px;
+    .intervention-description {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      justify-content: space-around;
 
-        border-radius: 100%;
+      .paragraphe {
+        width: 40vw;
+        p {
+          text-align: justify;
+          font-size: 1.2rem;
+        }
+      }
+
+      .intervention-map {
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    width: 100vw;
+  }
+  .intervention-component {
+    .intervention-description {
+      .paragraphe {
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .intervention-map {
+        margin: 0;
       }
     }
   }
