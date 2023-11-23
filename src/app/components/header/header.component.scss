@@ -100,52 +100,14 @@
 .navdesktop {
   display: none;
 }
-// .social-btn {
-//   //position: sticky;
-//   //bottom: 0;
 
-//   height: 40px;
-//   //width: 100px;
-
-// }
-
-// .social-btn svg {
-//   padding-left: 15px;
-//   height: 100px;
-//   width: 24px;
-// }
-
-// .social-btn span {
-//   width: 0px;
-//   overflow: hidden;
-//   transition: 0.3s;
-//   text-align: center;
-//   margin-left: 5px;
-// }
 .social-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-// .flex-center{
-//   display: flex;
-//   flex-direction: column;
-// }
 
-// .star{
-//   width: 50px;
-//   justify-content: center;
-//   align-items: center;
-//   //height: 100px;
-
-// }
-// .parastar{
-//   font-size: 15px;
-//   font-style: italic;
-//   color: $white;
-
-// }
 //-------------------------media queries------------------------//
 @media screen and (min-width: 768px) {
   .navbarmobile {
@@ -156,6 +118,9 @@
   // }
   .fa-phone {
     display: none;
+  }
+  .logo {
+    font-size: 15px;
   }
 
   .main-container {
@@ -185,7 +150,7 @@
     flex-direction: row;
     width: 80vw;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 15px;
   }
   .mainmenus li {
     color: $white;
@@ -204,5 +169,11 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
+  .mainmenus {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 20px;
+  }
 }
