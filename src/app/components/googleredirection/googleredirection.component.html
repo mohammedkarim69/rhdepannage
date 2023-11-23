@@ -1,0 +1,23 @@
+<div class="google flex column center">
+  <span class="underline"></span>
+  <div class="title flex column center">
+    <h2>Découvrer nos avis clients google</h2>
+
+    <span class="underline"></span>
+  </div>
+
+  <img src="../assets/images/6293828e30fb025780ee2960.png" class="googlestar">
+
+  <div *ngFor="let avis of googleList; let index = index" class="googleList">
+    <div class="starpara flex row">
+    <img src="{{ avis.imgstar }}" />
+    <p>{{avis.infoDate}}</p>
+  </div>
+    <div>
+      <p>{{ avis.description }}</p>
+      <p>
+        {{ avis.clientName }}
+      </p>
+    </div>
+  </div>
+</div>
