@@ -256,6 +256,7 @@ p {
 .home-page,
 .services-page,
 .form-redirect-page,
+.private-policy-page,
 .p404-page, .site-map-page {
   margin-top: calc($mobile-header + $mobile-h1-component - 2px);
   padding: $double-padding;
@@ -285,6 +286,7 @@ p {
   .home-page,
   .services-page,
   .form-redirect-page,
+  .private-policy-page,
   .p404-page, .site-map-page {
     margin-top: calc($desktop-header + $desktop-h1-component - 2px);
     padding: $four-padding;
@@ -320,6 +322,7 @@ p {
   .home-page,
   .services-page,
   .form-redirect-page,
+  .private-policy-page,
   .p404-page, .site-map-page {
     padding: 80px 160px 80px 160px;
   }

@@ -1,11 +1,5 @@
 @import "../../scss/variables.scss";
 .main-container{
   color: aqua;
-  height: calc(
-    100vh - $mobile-header - $mobile-h1-component - $height-headband -
-      var(--height-footer) - 18px
-  );
-}
-.container{
   
 }
