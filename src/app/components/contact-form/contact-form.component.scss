@@ -39,12 +39,14 @@ form {
     text-align: center;
   }
   .width-to-adapt {
-    width: 60%;
+    width: 100%;
     margin-bottom: $half-margin;
   }
+
 }
 p {
   width: 100%;
+  text-align: center;
 }
 i {
   border-radius: 25px;
@@ -54,6 +56,10 @@ i {
     0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
     0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
     0 0 0.7px $black;
+}
+
+.toto{
+  width:80%; 
 }
 
 @media screen and (min-width: 768px) {

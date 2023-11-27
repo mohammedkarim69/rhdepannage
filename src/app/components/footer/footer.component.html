@@ -3,12 +3,15 @@
   <section class="flex column half-width">
     <h6>Accès Rapide</h6>
     <ul>
-      <li class="pointer" *ngFor="let item of menuList" [routerLink]="[item.routerLink]">
+      <li
+        class="pointer"
+        *ngFor="let item of menuList"
+        [routerLink]="[item.routerLink]"
+      >
         {{ item.name }}
       </li>
-      <li class="pointer" routerLink="/plan-du-site">
-        Plan du site
-      </li>
+      <li class="pointer" routerLink="/plan-du-site">Plan du site</li>
+      <li class="pointer" routerLink="/plan-du-site">Politique de confidentialité</li>
     </ul>
   </section>
   <section class="half-width">

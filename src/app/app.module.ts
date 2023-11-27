@@ -37,6 +37,8 @@ import { ServicecontainerComponent } from './components/servicecontainer/service
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SiteMapComponent } from './pages/site-map/site-map.component';
 import { InterventionComponent } from './components/intervention/intervention.component';
+import { GoogleredirectionComponent } from './components/googleredirection/googleredirection.component';
+
 
 
 
@@ -66,7 +68,7 @@ import { InterventionComponent } from './components/intervention/intervention.co
     ServicecontainerComponent,
           CarouselComponent,
           SiteMapComponent,
-          InterventionComponent
+          InterventionComponent,GoogleredirectionComponent
   ],
 
   imports: [

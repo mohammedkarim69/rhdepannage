@@ -9,9 +9,9 @@
   width: 100vw;
   z-index: -1; /* Placez-le en arrière-plan */
   // top: calc($mobile-header);
-  top:80px;
+  top:47px;
   left: 0;
-  filter: blur(1px) brightness(40%);
+  filter: blur(1px) brightness(50%);
   min-height: $mobile-h1-component;
 }
 
@@ -104,3 +104,8 @@ p {
     font-size: $triple-font-size;
   }
 }
+@media screen and (min-width: 1200px) {
+  .blur-background {
+    top: calc($desktop-header);
+    // min-height: $desktop-h1-component;
+  }}
