@@ -6,16 +6,18 @@
   display: flex;
   background-color: $black;
   height: $mobile-header;
-  //align-items: center;
+  align-items: center;
   border: none;
   width: 100vw;
   top: 0;
+  
 }
 .container {
   display: flex;
   height: calc($mobile-header / 2);
   width: 82vw;
   margin: $half-margin;
+  align-items: center;
 }
 
 .fa-phone {

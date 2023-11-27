@@ -4,7 +4,7 @@
   flex-direction: column;
   background-color: $white;
   overflow: hidden;
-  
+
   padding-bottom: 2vh;
   img {
     width: 100vw;
@@ -12,7 +12,7 @@
   div {
     margin: auto;
     padding: 0 5vh;
-    h3 {
+    h2 {
       width: 100%;
       text-align: center;
       color: $black;
@@ -33,9 +33,10 @@
     div {
       padding: 0 5% 5px;
 
-      h3 {
+      h2 {
         font-size: 20px;
         padding-top: 5px;
+        color: black;
       }
     }
     p {
@@ -48,23 +49,28 @@
   }
 }
 
-@media screen and (min-width: 1235px) {
+@media screen and (min-width: 1200px) {
+ 
   .image-texte {
     padding-bottom: 0vh;
 
     img {
       width: 50%;
-      //height: 100%;
+    
     }
     div {
       width: 50%;
       padding: 0 5% 5px;
-      h3 {
-        font-size: 28px;
+      
+    
+    
+      h2 {
+        font-size: 2rem;
       }
     }
     p {
       font-size: 20px;
+      padding: 10px;
     }
   }
 }
