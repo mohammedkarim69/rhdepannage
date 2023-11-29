@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./private-policy.component.scss']
 })
 export class PrivatePolicyComponent {
-  title : string = "Charte de confidentialité"
+  title : string = "Confidentialité"
 }
