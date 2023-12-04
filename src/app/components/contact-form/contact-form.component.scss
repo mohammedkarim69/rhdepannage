@@ -30,6 +30,7 @@ form {
   }
   .submit {
     width: 200px;
+    height: 50px;
   }
 }
 .all-infos {
@@ -66,6 +67,7 @@ i {
   .width-to-adapt {
     width: auto;
   }
+  
   form {
     flex-direction: row;
     flex-wrap: wrap;
@@ -76,6 +78,10 @@ i {
       mat-form-field {
         width: 100%;
       }
+    }
+    .button {
+      width: 200px;
+      height: 90px;
     }
     .field-text-area {
       width: 100%;
