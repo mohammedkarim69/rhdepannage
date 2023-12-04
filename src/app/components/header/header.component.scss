@@ -85,6 +85,7 @@
   justify-content: space-around;
   background-color: $black;
   border: none;
+  
 }
 
 .mainmenu li {
@@ -94,6 +95,9 @@
   height: 10vh;
   color: $yellow;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mainmenu li:hover {
   background-color: $yellow;

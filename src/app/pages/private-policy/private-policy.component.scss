@@ -1,4 +1,4 @@
-@import "../scss/variables.scss";
+@import "../../scss/variables.scss";
 
 .main-container {
   background-color: $black;
@@ -10,87 +10,11 @@ h2 {
   margin-bottom: 2vh;
   color: $white;
 }
-
-.main-icon {
-  align-items: center;
-}
-.main-icon div  {
-display: flex;
-justify-content: space-evenly;
+h3 {
+  margin: 2vh;
 }
 
-.icon {
-  background-color: lightgray;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  margin: $double-padding 0;
-}
-
-i {
-  font-size: 50px;
-  
-}
-
-.text {
-  font-size: small;
-  color: $black;
-  text-align: center;
-}
-
-//----------------------------media queries --------------------------------//
-@media screen and (min-width: 768px) {
-  .main-container {
-    .title {
-      width: 100vw;
-    }
-    .main-icon {
-      flex-direction: row;
-      justify-content: center;
-    }
-    .icon {
-      height: 9rem;
-      width: 9rem;
-      margin: $triple-padding;
-    }
-    i {
-      font-size:6vh;
-      height: 4rem;
-    }
-
-    .text {
-      font-size: 16px;
-      color: $black;
-     // height: 3rem;
-       max-width: 75%;
-      text-align: center;
-    }
-    .main-icon div  {
-      display: flex;
-      justify-content: center;
-      }
-  }
-
-  @media screen and (min-width: 950px) {
-    .main-container {
-      .main-icon {
-        flex-direction: row;
-        justify-content: center;
-      }
-      .icon {
-        height: 12rem;
-        width: 12rem;
-        // margin: $normal-margin;
-      }
-      i {
-        font-size: 9vh;
-        height: 6rem;
-      }
-      .text {
-        height: 4rem;
-        max-width: 75%;
-        text-align: center;
-      }
-    }
-  }
+p {
+  margin: 2vh;
+  text-align: justify;
 }
