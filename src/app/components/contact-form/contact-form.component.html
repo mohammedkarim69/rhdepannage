@@ -1,26 +1,28 @@
-<div class="all-infos flex column  align-center">
+<div class="all-infos flex column align-center">
   <span class="underline"></span>
   <h2>Adresse et Téléphone</h2>
   <span class="underline"></span>
-  <div class="informations flex column  ">
-  <a
-    class="flex align-center width-to-adapt justify-center "
-    href="https://maps.app.goo.gl/hzJtFWsvaquvWS1T7"
-  >
-    <i class="fa-solid fa-location-dot"></i>
-    <div class="flex column">
-      <p>7 impasse des poiriers</p>
-      <p>38550 Sablons France</p>
-    </div>
-  </a>
-  <a class="flex align-center width-to-adapt justify-center" href="tel:+33603430085">
-    
-    <i class="fa-solid fa-phone"></i>
-    <div class="flex column">
-    <p class="flex">06 03 43 00 85</p>
+  <div class="informations flex column">
+    <a
+      class="flex align-center width-to-adapt justify-center"
+      href="https://maps.app.goo.gl/hzJtFWsvaquvWS1T7"
+    >
+      <i class="fa-solid fa-location-dot"></i>
+      <div class="flex column">
+        <p>7 impasse des poiriers</p>
+        <p>38550 Sablons France</p>
+      </div>
+    </a>
+    <a
+      class="flex align-center width-to-adapt justify-center"
+      href="tel:+33603430085"
+    >
+      <i class="fa-solid fa-phone"></i>
+      <div class="flex column">
+        <p class="flex">06 03 43 00 85</p>
+      </div>
+    </a>
   </div>
-  </a>
-</div>
 
   <h2>Horaires</h2>
   <span class="underline"></span>
@@ -64,6 +66,7 @@
         (keyup)="changeLastnameValue($event)"
       />
       <button
+        type="button"
         matSuffix
         mat-icon-button
         aria-label="Clear"
@@ -101,6 +104,7 @@
         matSuffix
         mat-icon-button
         aria-label="Clear"
+        type="button"
         (click)="firstnameValue = ''"
       >
         <mat-icon>close</mat-icon>
@@ -134,6 +138,7 @@
       />
       <button
         matSuffix
+        type="button"
         mat-icon-button
         aria-label="Clear"
         (click)="emailValue = ''"
@@ -237,6 +242,7 @@
     id="name"
     value="http://localhost:4200//formulaire-envoye"
   />
+
   <div class="button-wrapper">
     <button
       [type]="checkErrors() ? 'submit' : 'button'"
@@ -245,11 +251,7 @@
     >
       ENVOYER
     </button>
-    <button
-      [type]="checkErrors() ? 'submit' : 'button'"
-      class="backdrop"
-      (click)="changeSubmitted()"
-    ></button>
+    
   </div>
 </form>
 <app-loader [booleanVisibilityInLoarder]="isLoaderVisible"></app-loader>

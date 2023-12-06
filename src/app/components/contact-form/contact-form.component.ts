@@ -75,7 +75,7 @@ export class ContactFormComponent {
 
   changeSubmitted() {
     this.isFormClicked = true;
-    if (this.checkErrors()) {
+    if (!this.checkErrors()) {
       this.isLoaderVisible = true;
     }
   }
