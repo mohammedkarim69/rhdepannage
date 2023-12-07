@@ -22,6 +22,7 @@ form {
     .mat-form-field-text-area {
       height: 400px;
       overflow: hidden;
+      
       textarea {
         height: 350px;
         resize: none;
@@ -47,8 +48,14 @@ form {
 }
 p {
   width: 100%;
-  text-align: center;
+  text-align: center; padding-left: 10px;
 }
+.style{
+  padding-right: 55px;
+}
+
+
+
 i {
   border-radius: 25px;
   text-shadow: 0 0 0.7px $black, 0 0 0.7px $black, 0 0 0.7px $black,
@@ -63,9 +70,17 @@ i {
   width:80%; 
 }
 
+small{
+  color: $yellow;
+  width: 94%;
+}
+
 @media screen and (min-width: 768px) {
   .width-to-adapt {
     width: auto;
+  }
+  .style{
+    padding-right: 85px;
   }
   
   form {

@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
-
   isFormClicked: boolean = false;
   hasErrors: boolean = false;
   isLoaderVisible: boolean = false;

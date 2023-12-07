@@ -41,6 +41,7 @@
 .title {
   width: 100%;
   color: $yellow;
+  padding-left: 40px;
 }
 
 .logo img {
@@ -139,6 +140,10 @@
   .logo {
     height: calc($desktop-header / 2.5);
     width: calc($desktop-header / 2.5);
+  }
+
+  .title{
+    padding-left: 0;
   }
 
   // .logo img {

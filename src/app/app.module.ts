@@ -39,6 +39,7 @@ import { SiteMapComponent } from './pages/site-map/site-map.component';
 import { InterventionComponent } from './components/intervention/intervention.component';
 import { GoogleredirectionComponent } from './components/googleredirection/googleredirection.component';
 import { PrivatePolicyComponent } from './pages/private-policy/private-policy.component';
+import { ArrowUpComponent } from './components/arrow-up/arrow-up.component';
 
 
 
@@ -69,7 +70,7 @@ import { PrivatePolicyComponent } from './pages/private-policy/private-policy.co
     ServicecontainerComponent,
           CarouselComponent,
           SiteMapComponent,
-          InterventionComponent,GoogleredirectionComponent, PrivatePolicyComponent
+          InterventionComponent,GoogleredirectionComponent, PrivatePolicyComponent,ArrowUpComponent
   ],
 
   imports: [
