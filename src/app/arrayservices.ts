@@ -13,7 +13,7 @@ export const myServices: service[] =  [
     description:"Les véhicules hors d’usage sont des déchets qui doivent être débarrassés en raison de leur nuisance sur l’environnement et leur encombrement. Pour profiter d’un service d’enlèvement d’épaves gratuit dans le département du du 26,38 et du département 69, faites appel à RH DÉPANNAGE."
   },
   {
-    title:"rachat et revente de véhicule",
+    title:"Rachat et revente de véhicules",
     img:'../assets/images/pexels-avinash-patel-544542.jpg' ,
     description:"En moyenne, les Français changent de voiture tous les 5 ans, ce qui implique généralement de se débarrasser de l’ancien. Pour tout besoin d’un professionnel en rachat et revente de véhicule dans le 38, confiez-vous à RH DÉPANNAGE."
     

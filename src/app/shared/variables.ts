@@ -11,7 +11,7 @@ export const NAVBAR_MENU: Menu[] = [
     routerLink: '/qui-sommes-nous',
   },
   {
-    name: 'Gallerie Photos',
+    name: 'Galerie Photos',
     routerLink: '/gallerie-photos',
   },
   {

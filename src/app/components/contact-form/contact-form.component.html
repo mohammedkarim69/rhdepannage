@@ -2,7 +2,7 @@
   <span class="underline"></span>
   <h2>Adresse et Téléphone</h2>
   <span class="underline"></span>
-  <div class="informations flex column">
+  <div class="informations flex column ">
     <a
       class="flex align-center width-to-adapt justify-center"
       href="https://maps.app.goo.gl/hzJtFWsvaquvWS1T7"
@@ -19,7 +19,7 @@
     >
       <i class="fa-solid fa-phone"></i>
       <div class="flex column">
-        <p class="flex">06 03 43 00 85</p>
+        <p class=" style flex">06 03 43 00 85</p>
       </div>
     </a>
   </div>
@@ -56,6 +56,20 @@
     </div>
   </fieldset>
   <fieldset>
+    <div *ngIf="isFormClicked && hasErrors">
+      <small *ngIf="lastnameValue && lastnameValue.length > 255">
+        Le nom ne doit pas comporter plus de
+        <strong>255 caractères</strong>.
+      </small>
+      <small *ngIf="lastnameValue && lastnameValue.length <= 2">
+        Le nom doit comporter plus de
+        <strong>2 caractères</strong>.
+      </small>
+      <small *ngIf="!lastnameValue">
+        Le nom est
+        <strong>obligatoire</strong>.
+      </small>
+    </div>
     <mat-form-field>
       <mat-label>Nom...</mat-label>
       <input
@@ -75,23 +89,10 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <div *ngIf="isFormClicked && hasErrors">
-      <small *ngIf="lastnameValue && lastnameValue.length > 255">
-        Le nom ne doit pas comporter plus de
-        <strong>255 caractères</strong>.
-      </small>
-      <small *ngIf="lastnameValue && lastnameValue.length <= 2">
-        Le nom doit comporter plus de
-        <strong>2 caractères</strong>.
-      </small>
-      <small *ngIf="!lastnameValue">
-        Le nom est
-        <strong>obligatoire</strong>.
-      </small>
-    </div>
   </fieldset>
   <fieldset>
     <mat-form-field>
+      
       <mat-label>Prénom...</mat-label>
       <input
         matInput
@@ -110,20 +111,7 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <div *ngIf="isFormClicked && hasErrors">
-      <small *ngIf="firstnameValue && lastnameValue.length > 255">
-        Le prénom ne doit pas comporter plus de
-        <strong>255 caractères</strong>.
-      </small>
-      <small *ngIf="firstnameValue.length <= 2">
-        Le prénom doit comporter plus de
-        <strong>2 caractères</strong>.
-      </small>
-      <small *ngIf="!firstnameValue">
-        Le prénom est
-        <strong>obligatoire</strong>.
-      </small>
-    </div>
+    
   </fieldset>
   <fieldset>
     <mat-form-field>
@@ -148,7 +136,7 @@
     </mat-form-field>
     <div *ngIf="isFormClicked && hasErrors">
       <small *ngIf="!validateEmail()">
-        Renseigner un email au bon format
+        Renseigner un email au
         <strong>bon format</strong>.
       </small>
       <small *ngIf="!emailValue">
@@ -159,7 +147,7 @@
   </fieldset>
   <fieldset>
     <mat-form-field>
-      <mat-label>Telephone</mat-label>
+      <mat-label>Téléphone</mat-label>
       <span class="prefix" matPrefix>+33 &nbsp;</span>
       <input
         type="tel"
@@ -251,7 +239,6 @@
     >
       ENVOYER
     </button>
-    
   </div>
 </form>
 <app-loader [booleanVisibilityInLoarder]="isLoaderVisible"></app-loader>
