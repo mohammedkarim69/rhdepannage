@@ -22,7 +22,7 @@ form {
     .mat-form-field-text-area {
       height: 400px;
       overflow: hidden;
-      
+
       textarea {
         height: 350px;
         resize: none;
@@ -44,17 +44,15 @@ form {
     width: 100%;
     margin-bottom: $half-margin;
   }
-
 }
 p {
   width: 100%;
-  text-align: center; padding-left: 10px;
+  text-align: center;
+  padding-left: 10px;
 }
-.style{
+.style {
   padding-right: 55px;
 }
-
-
 
 i {
   border-radius: 25px;
@@ -66,23 +64,27 @@ i {
     0 0 0.7px $black;
 }
 
-.informations{
-  width:80%; 
+.informations {
+  width: 80%;
 }
 
-small{
+small {
   color: $yellow;
   width: 94%;
+}
+iframe {
+  height: 300px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .width-to-adapt {
     width: auto;
   }
-  .style{
+  .style {
     padding-right: 85px;
   }
-  
+
   form {
     flex-direction: row;
     flex-wrap: wrap;
