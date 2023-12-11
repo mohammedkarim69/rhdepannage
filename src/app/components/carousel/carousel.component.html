@@ -3,16 +3,20 @@
     <span class="underline"></span>
     <h2>Nos services</h2>
     <span class="underline"></span>
-    
-   </div>
-   <div class="text-image center ">
-  <div class="carousel-image"
-   [style.background-image]="'url(' + images[currentIndex] + ')'">
- </div>
- <div class="service-container flex column justify-center">
- <div class="service  flex column justify-center "> DÉPANNAGE ET REMORQUAGE</div>
-<div class="service flex column justify-center"> ENLÈVEMENT D'ÉPAVE</div>
-<div class="service flex column justify-center"> RACHAT ET REVENTE DE VÉHICULE</div> 
-</div>
-</div>
+  </div>
+  <div class="text-image center">
+    <div
+      class="carousel-image"
+      [style.background-image]="'url(' + images[currentIndex] + ')'"
+    ></div>
+    <div class="service-container flex column justify-center">
+      <div class="service flex column justify-center " routerLink="/services">
+        DÉPANNAGE ET REMORQUAGE
+      </div>
+      <div class="service flex column justify-center" routerLink="/services" >ENLÈVEMENT D'ÉPAVE</div>
+      <div class="service flex column justify-center" routerLink="/services">
+        RACHAT ET REVENTE DE VÉHICULE
+      </div>
+    </div>
+  </div>
 </div>

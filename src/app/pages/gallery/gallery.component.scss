@@ -5,9 +5,9 @@
   z-index: 900;
   .hoverpicture {
     margin: 24px;
-    width: 60vw;
-    height: 60vw;
-    border-radius: 50%;
+    width: 80vw;
+    height: 80vw;
+    //border-radius: 50%;
     border: 2px solid $yellow;
     overflow: hidden;
     animation: myAnim 3s ease 0s 1 normal forwards;

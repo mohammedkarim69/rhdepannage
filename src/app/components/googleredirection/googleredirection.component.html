@@ -6,13 +6,13 @@
     <span class="underline"></span>
   </div>
 
-  <img src="../assets/images/6293828e30fb025780ee2960.png" class="googlestar">
+  <img src="../assets/images/6293828e30fb025780ee2960.png" class="googlestar" alt="image google avec inscrit google et des étoiles jaunes" />
 
   <div *ngFor="let avis of googleList; let index = index" class="googleList">
     <div class="starpara flex row">
-    <img src="{{ avis.imgstar }}" />
-    <p>{{avis.infoDate}}</p>
-  </div>
+      <img src="{{ avis.imgstar }}"  alt="étoiles jaune indiquant les avis des clients"/>
+      <p>{{ avis.infoDate }}</p>
+    </div>
     <div>
       <p>{{ avis.description }}</p>
       <p>
@@ -20,13 +20,16 @@
       </p>
     </div>
   </div>
-  <div class="button-wrapper flex space-around ">
-  <a href=" https://search.google.com/local/writereview?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4">
-   
-  <button class="button submit" >Donner un avis</button > 
-  </a>
-  <a href="https://search.google.com/local/reviews?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4">
-  <button class="button submit">Nos avis clients </button>
-</a>
-</div>
+  <div class="button-wrapper flex space-around">
+    <a
+      href=" https://search.google.com/local/writereview?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4"
+    >
+      <button class="button submit">Donner un avis</button>
+    </a>
+    <a
+      href="https://search.google.com/local/reviews?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4"
+    >
+      <button class="button submit">Nos avis clients</button>
+    </a>
+  </div>
 </div>
