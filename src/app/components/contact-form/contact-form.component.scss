@@ -40,13 +40,13 @@ form {
 }
 .all-infos {
   h2 {
-    margin-bottom: 2vh;
+    margin: 4vh 0;
     width: 100%;
     text-align: center;
   }
   .width-to-adapt {
     width: 100%;
-    margin-bottom: $half-margin;
+    margin-bottom: $double-margin;
   }
 }
 p {
@@ -96,6 +96,7 @@ iframe {
   }
   .width-to-adapt {
     width: auto;
+    
   }
   .style {
     padding-right: 85px;
