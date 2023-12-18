@@ -92,7 +92,8 @@ iframe {
 
 @media screen and (min-width: 768px) {
   iframe{
-    width:70VW
+    width:70vw;
+    border-radius:20px
   }
   .width-to-adapt {
     width: auto;
