@@ -1,8 +1,8 @@
 @import "../../scss/variables.scss";
 @import "../../scss/buttons.scss";
 
-.mail{
-  padding-left:30px;
+.mail {
+  padding-left: 30px;
 }
 
 form {
@@ -53,19 +53,14 @@ p {
   width: 100%;
   text-align: center;
   padding-left: 8px;
-  
 }
 .style {
   padding-right: 53px;
-  
 }
 
-
-
-.informations{
-  margin-bottom:2vh;
+.informations {
+  margin-bottom: 2vh;
 }
-
 
 i {
   border-radius: 25px;
@@ -91,13 +86,12 @@ iframe {
 }
 
 @media screen and (min-width: 768px) {
-  iframe{
-    width:70vw;
-    border-radius:20px
+  iframe {
+    width: 70vw;
+    border-radius: 20px;
   }
   .width-to-adapt {
     width: auto;
-    
   }
   .style {
     padding-right: 85px;
