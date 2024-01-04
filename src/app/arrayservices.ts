@@ -5,7 +5,7 @@ export const myServices: service[] =  [
     title: 'Dépannage et remorquage',
     img: '../assets/images/panne-camion-transporteur-pendant-travail-utilisant-transporteur-ceinture-verrouillee-autre-voiture-verte.jpg',
     description:
-      'Les véhicules hors d’usage sont des déchets qui doivent être débarrassés en raison de leur nuisance sur l’environnement et leurencombrement. Pour profiter d’un service d’enlèvement d’épaves gratuit dans le département du du 26,38 et du département 69, faites appel à RH DÉPANNAGE.',
+      'Les véhicules hors d’usage sont des déchets qui doivent être débarrassés en raison de leur nuisance sur l’environnement et leur encombrement. Pour profiter d’un service d’enlèvement d’épaves gratuit dans le département du du 26,38 et du département 69, faites appel à RH DÉPANNAGE.',
   },
   {
     title: "Enlèvement d'épave",
