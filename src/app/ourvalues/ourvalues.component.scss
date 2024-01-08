@@ -13,12 +13,10 @@ h2 {
 
 .main-icon {
   align-items: center;
-  //padding-bottom: 100px;
-  
 }
-.main-icon div  {
-display: flex;
-justify-content: space-evenly;
+.main-icon div {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .icon {
@@ -31,7 +29,6 @@ justify-content: space-evenly;
 
 i {
   font-size: 50px;
-  
 }
 
 .text {
@@ -43,7 +40,6 @@ i {
 //----------------------------media queries --------------------------------//
 @media screen and (min-width: 768px) {
   .main-container {
- 
     .main-icon {
       flex-direction: row;
       justify-content: center;
@@ -54,21 +50,21 @@ i {
       margin: $triple-padding;
     }
     i {
-      font-size:6vh;
+      font-size: 6vh;
       height: 4rem;
     }
 
     .text {
       font-size: 16px;
       color: $black;
-     // height: 3rem;
-       max-width: 75%;
+
+      max-width: 75%;
       text-align: center;
     }
-    .main-icon div  {
+    .main-icon div {
       display: flex;
       justify-content: center;
-      }
+    }
   }
 
   @media screen and (min-width: 950px) {
@@ -80,7 +76,6 @@ i {
       .icon {
         height: 12rem;
         width: 12rem;
-        // margin: $normal-margin;
       }
       i {
         font-size: 9vh;
