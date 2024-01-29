@@ -30,6 +30,10 @@ p {
   font-size: $normal-font-size;
   width: 100%;
 }
+.tel{
+  color:$yellow;
+  font-size: xx-large;
+}
 
 @media screen and (min-width: 768px) {
   .blur-background {
