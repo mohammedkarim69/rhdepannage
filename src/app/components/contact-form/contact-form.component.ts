@@ -61,7 +61,7 @@ export class ContactFormComponent {
   }
 
   validatePhone(): boolean {
-    const phoneRegex = /^[0-9]{10}$/;
+    const phoneRegex = /^[0-10]{10}$/;
     return this.phoneValue.match(phoneRegex) !== null;
   }
 

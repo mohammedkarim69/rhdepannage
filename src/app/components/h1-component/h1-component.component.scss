@@ -1,14 +1,10 @@
 @import "../../scss/variables.scss";
 
-// .intro {
-//   height: 0vh;
-// }
-
 .blur-background {
   position: fixed;
   width: 100vw;
   z-index: -1; /* Placez-le en arrière-plan */
-  // top: calc($mobile-header);
+
   top: 47px;
   left: 0;
   filter: blur(1px) brightness(50%);
@@ -33,7 +29,10 @@ p {
   padding-top: 2vh;
   font-size: $normal-font-size;
   width: 100%;
-  //text-align: center;
+}
+.tel{
+  color:$yellow;
+  font-size: xx-large;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,6 +57,5 @@ p {
 @media screen and (min-width: 1200px) {
   .blur-background {
     top: calc($desktop-header);
-    // min-height: $desktop-h1-component;
   }
 }

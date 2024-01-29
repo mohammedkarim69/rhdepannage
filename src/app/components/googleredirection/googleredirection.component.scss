@@ -1,12 +1,6 @@
 @import "../../scss/variables.scss";
 
-// .title{
-//   padding-top: $four-padding
-// }
-
-
 h2 {
-  //margin-bottom: 2vh;
   color: $white;
   text-align: center;
 }
@@ -16,21 +10,20 @@ p {
   text-align: justify;
 }
 
-.starpara p{
-font-style: italic;
-color: gray;
+.starpara p {
+  font-style: italic;
+  color: gray;
 }
 
-
-.googlestar{
+.googlestar {
   height: 100px;
 }
-img{
-  margin:   2vh 0 0 2vh;
-  height:20px;
+img {
+  margin: 2vh 0 0 2vh;
+  height: 20px;
 }
 
-span{
+span {
   color: lightgrey;
 }
 
@@ -39,22 +32,21 @@ span{
   height: 50px;
 }
 
-.button-wrapper{
+.button-wrapper {
   width: 100%;
-  margin-bottom: 2vh;
+  margin: 4vh 0;
 }
 
 @media screen and (min-width: 768px) {
   .submit {
     width: 155px;
-    height: 90px;
+    height: 70px;
   }
-  .googlestar{
+  .googlestar {
     height: 150px;
   }
-  img{
-    margin:   2vh 0 0 2vh;
-    height:30px;
+  img {
+    margin: 2vh 0 0 2vh;
+    height: 30px;
   }
-  
 }
