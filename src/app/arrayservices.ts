@@ -10,7 +10,7 @@ export const myServices: service[] =  [
   {
     title: "Enlèvement d'épave",
     img: '../assets/images/auto-3734396_1280.jpg',
-    description:"Les véhicules hors d’usage sont des déchets qui doivent être débarrassés en raison de leur nuisance sur l’environnement et leur encombrement. Pour profiter d’un service d’enlèvement d’épaves gratuit dans le département du du 26,38 et du département 69, faites appel à RH DÉPANNAGE."
+    description:"Les véhicules hors d’usage sont des déchets qui doivent être débarrassés en raison de leur nuisance sur l’environnement et leur encombrement. Pour profiter d’un service d’enlèvement d’épaves gratuit dans le département du 26,38 et du 69, faites appel à RH DÉPANNAGE.De plus, nous vous remettrons un certificat de destruction."
   },
   {
     title:"Rachat et revente de véhicules",
