@@ -14,10 +14,8 @@ export class CarouselComponent {
 
   images = [
     '../../assets/images/photovoiturejaune.jpg',
-
     '../../assets/images/photodepmoto.jpg',
-
-    '../../assets/images/photodepdoublevoiture.jpg',
+    '../../assets/images/porsche.jpg',
     '../../assets/images/photodepcamion.jpg',
     '../../assets/images/photodepboue.jpg',
     '../../assets/images/panne-camion-transporteur-pendant-travail-utilisant-transporteur-ceinture-verrouillee-autre-voiture-verte.jpg',

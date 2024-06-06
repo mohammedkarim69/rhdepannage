@@ -15,7 +15,7 @@ export const pictureList: picture[] = [
   },
 
   {
-    image: '../assets/images/01.jpg',
+    image: '../assets/images/photodepcamion.jpg',
     alt: 'camion remorquant une voiture',
   },
 
