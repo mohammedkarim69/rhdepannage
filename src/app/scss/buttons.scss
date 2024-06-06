@@ -47,7 +47,7 @@
 }
 
 .button:hover + .backdrop {
-  // top: 48%;
+  
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transform: rotate(15deg) translateX(-50%) translateY(-50%);
@@ -62,6 +62,4 @@
   box-shadow: none;
 }
 
-// .submit {
-//   background-color: $yellow;
-// }
+
