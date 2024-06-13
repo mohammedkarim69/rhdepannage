@@ -1,6 +1,7 @@
 import { Menu } from './interfaces/Menu';
 
 export const URLAPI = 'http://localhost:8080/api';
+export const EMAIL_OFFICIAL = 'info@RHDepannage';
 export const NAVBAR_MENU: Menu[] = [
   {
     name: 'Accueil',
