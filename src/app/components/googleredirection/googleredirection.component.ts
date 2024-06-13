@@ -96,10 +96,13 @@ Si besoin je referai appel à eux.`,
   }
 
   ngOnInit(): void {
-      this.getGoogleReviews().subscribe({
-        next: (data) => this.googleAvisList = data,
-        error: (err) => console.log(err.error.message)
-      })
+      // this.getGoogleReviews().subscribe({
+      //   next: (data) => {this.googleAvisList = data
+      //     console.log(data)
+      //     console.log("coucou")
+      //   },
+      //   error: (err) => console.log(err)
+      // })
   }
 
   getNumberStarSolid(stars: StarRating): number[] {
@@ -139,13 +142,18 @@ Si besoin je referai appel à eux.`,
   //------------------------------------
   //-----Google-Reviews-API-Request-----
   //------------------------------------
+  
+  // private googleAccountId : string = "AIzaSyAn582RfoBGqiZNY7F73tpCIxKcePleHKY";
+  private googleLocationId : string = "11415721";
+  // private googleAccountId : string = "11415721";
+  private googleAccountId : string = "9465641318277647774";
 
-  private googleAccountId : string = "";
-  private googleLocationId : string = "ChIJW6E5Ms4X9UcRJqZyrxp74hc";
 
   // getGoogleReviews(): Observable<any> {
   protected getGoogleReviews(): Observable<GoogleReviews> {
+    // return this.http.get<GoogleReviews>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews`)
     return this.http.get<GoogleReviews>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews`)
+
   }
 
   protected getOneReview(reviewId : number): Observable<Review> {
