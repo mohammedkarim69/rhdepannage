@@ -3,22 +3,23 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent {
-  constructor() {  
-    setInterval(() => {    
-         this.currentIndex = (this.currentIndex + 1) % this.images.length;    
-         }, 3000);
-        }
+  constructor() {
+    setInterval(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    }, 3000);
+  }
 
-  images = ['../../assets/images/panne-camion-transporteur-pendant-travail-utilisant-transporteur-ceinture-verrouillee-autre-voiture-verte.jpg',
+  images = [
+    '../../assets/images/photovoiturejaune.jpg',
+    '../../assets/images/photodepmoto.jpg',
+    '../../assets/images/porsche.jpg',
+    '../../assets/images/photodepcamion.jpg',
+    '../../assets/images/photodepboue.jpg',
+    '../../assets/images/panne-camion-transporteur-pendant-travail-utilisant-transporteur-ceinture-verrouillee-autre-voiture-verte.jpg',
+  ];
 
-  '../../assets/images/03.jpg',
-
-  '../../assets/images/06.jpg'];
-
-    currentIndex = 0;
-
-     
+  currentIndex = 0;
 }

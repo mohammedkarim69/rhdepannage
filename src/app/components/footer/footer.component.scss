@@ -10,7 +10,7 @@ footer {
   section {
     ul {
       li {
-        padding-bottom: $normal-padding;
+        padding-bottom: 9px;
       }
     }
     h6 {
@@ -39,6 +39,9 @@ footer {
     color: $white;
     padding-bottom: $normal-padding;
   }
+  .style {
+    padding-left: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -62,10 +65,22 @@ footer {
     }
   }
 
-  li,
-  p {
-    padding-top: $normal-padding;
+  li {
+   
     font-size: $double-font-size;
+  }
+  p{
+    padding-top: 9px;
+    font-size: $double-font-size;
+  }
+ 
+  ::-webkit-scrollbar {
+    height: 18px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: $yellow;
   }
 }
 

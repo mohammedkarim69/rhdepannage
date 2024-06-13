@@ -7,6 +7,6 @@ import { pictureList } from 'src/app/pictureUrl';
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent {
-  title: string = 'Gallerie Photos';
+  title: string = 'Galerie Photos';
   pictureUrl = pictureList;
 }

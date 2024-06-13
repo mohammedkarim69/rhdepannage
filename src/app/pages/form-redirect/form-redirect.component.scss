@@ -1,7 +1,6 @@
 @import "../../scss/variables.scss";
 
 .form-redirect-page {
-  // margin-top: calc($mobile-header);
   height: calc(
     100vh - $mobile-header - $mobile-h1-component - $height-headband -
       var(--height-footer) - 18px

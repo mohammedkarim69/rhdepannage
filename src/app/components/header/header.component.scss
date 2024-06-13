@@ -2,7 +2,7 @@
 
 .main-container {
   z-index: 1000;
-  position:fixed;
+  position: fixed;
   display: flex;
   background-color: $black;
   height: $mobile-header;
@@ -16,6 +16,7 @@
   height: calc($mobile-header / 2);
   width: 82vw;
   margin: $half-margin;
+  align-items: center;
 }
 
 .fa-phone {
@@ -24,20 +25,24 @@
 }
 
 .phone {
-  width: 100%;
-  justify-content: end;
+  justify-content: space-between;
 }
 
-
 .logo {
-  height: calc($mobile-header / 1.5);
-  background-color: $yellow;
-  border-radius: 25px;
+  display: flex;
+  height: 80px;
+  color: $yellow;
+  font-size: 20px;
+  align-items: center;
+}
+.title {
+  width: 100%;
+  color: $yellow;
+  padding-left: 40px;
 }
 
 .logo img {
-  height: calc($mobile-header / 1.5);
-  width: calc($mobile-header / 1.5);
+  height: 100%;
 }
 
 .navlistmobile {
@@ -60,8 +65,10 @@
 .navbarmobile i {
   z-index: 9999;
   font-size: x-large;
+  width: 24px;
+  height: 24px;
   position: fixed;
-  //top: 20px;
+  top: 18px;
   right: 15px;
   color: $yellow;
 }
@@ -85,6 +92,9 @@
   height: 10vh;
   color: $yellow;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mainmenu li:hover {
   background-color: $yellow;
@@ -94,14 +104,24 @@
   display: none;
 }
 
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
 //-------------------------media queries------------------------//
 @media screen and (min-width: 768px) {
   .navbarmobile {
     display: none;
   }
-  .phone {
+
+  .fa-phone {
     display: none;
+  }
+  .logo {
+    font-size: 15px;
   }
 
   .main-container {
@@ -116,12 +136,9 @@
     width: calc($desktop-header / 2.5);
   }
 
- 
-
-  // .logo img {
-  //   height: 100%;
-  //   width: 100%;
-  // }
+  .title {
+    padding-left: 0;
+  }
 
   .navdesktop {
     display: flex;
@@ -133,7 +150,7 @@
     flex-direction: row;
     width: 80vw;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 15px;
   }
   .mainmenus li {
     color: $white;
@@ -150,10 +167,13 @@
     display: flex;
     justify-content: space-between;
   }
-
 }
 
-@media screen and (min-width: 900px) {
-
-  
+@media screen and (min-width: 950px) {
+  .mainmenus {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 20px;
+  }
 }

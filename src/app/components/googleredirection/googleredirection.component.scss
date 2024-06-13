@@ -1,0 +1,52 @@
+@import "../../scss/variables.scss";
+
+h2 {
+  color: $white;
+  text-align: center;
+}
+
+p {
+  margin: 2vh;
+  text-align: justify;
+}
+
+.starpara p {
+  font-style: italic;
+  color: gray;
+}
+
+.googlestar {
+  height: 100px;
+}
+img {
+  margin: 2vh 0 0 2vh;
+  height: 20px;
+}
+
+span {
+  color: lightgrey;
+}
+
+.submit {
+  width: 155px;
+  height: 50px;
+}
+
+.button-wrapper {
+  width: 100%;
+  margin: 4vh 0;
+}
+
+@media screen and (min-width: 768px) {
+  .submit {
+    width: 155px;
+    height: 70px;
+  }
+  .googlestar {
+    height: 150px;
+  }
+  img {
+    margin: 2vh 0 0 2vh;
+    height: 30px;
+  }
+}

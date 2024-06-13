@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+
+.arrow{
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  display: none;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+
+
+/* Afficher le bouton lorsque le scroll est supérieur à 600px */
+.show {
+  display: block;
+}
+}
