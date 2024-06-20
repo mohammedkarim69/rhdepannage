@@ -8,28 +8,29 @@
 
   <img src="../assets/images/6293828e30fb025780ee2960.png" class="googlestar" alt="image google avec inscrit google et des étoiles jaunes" />
 
-  <div *ngFor="let avis of googleList; let index = index" class="googleList">
-    <div class="starpara flex row">
-      <img src="{{ avis.imgstar }}"  alt="étoiles jaune indiquant les avis des clients"/>
-      <p>{{ avis.infoDate }}</p>
+  <div class="elfsight-app-d87e3d11-78e5-41f9-ada7-12602a8cf46c" data-elfsight-app-lazy></div>
+  <!-- <ng-template *ngIf="googleAvisList">
+    <div *ngFor="let avis of googleAvisList2.reviews; let index = index" class="googleList">
+      <div class="starpara flex row">
+        <div class=" flex center">
+          <i class="fa-solid fa-star" *ngFor="let star of getNumberStarSolid(avis.starRating)"></i>
+          <i class="fa-regular fa-star" *ngFor="let star of getNumberStarRegular(avis.starRating)"></i>
+        </div>
+        <p>{{ avis.name }}</p>
+        <p>Avis posté le : {{ avis.createTime | date:'dd/MM/yyyy' }}</p>
+      </div>
+      <p>{{ avis.comment }}</p>
     </div>
-    <div>
-      <p>{{ avis.description }}</p>
-      <p>
-        {{ avis.clientName }}
-      </p>
-    </div>
-  </div>
+  </ng-template>
+  <ng-template *ngIf="!googleAvisList">
+    <p> Erreur dans le téléchargement des avis google.</p>
+  </ng-template>
   <div class="button-wrapper flex space-around">
-    <a
-      href=" https://search.google.com/local/writereview?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4"
-    >
+    <a href=" https://search.google.com/local/writereview?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4">
       <button class="button submit">Donner un avis</button>
     </a>
-    <a
-      href="https://search.google.com/local/reviews?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4"
-    >
+    <a href="https://search.google.com/local/reviews?placeid=ChIJd4oK7Iqb200RPtGJ6XS-SG4">
       <button class="button submit">Nos avis clients</button>
     </a>
-  </div>
+  </div> -->
 </div>

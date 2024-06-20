@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { EMAIL_OFFICIAL } from 'src/app/shared/variables';
 
 @Component({
   selector: 'app-contact-form',
@@ -18,7 +19,7 @@ export class ContactFormComponent {
   phoneValue: string = '';
   themeValue: string = '';
   messageValue: string = '';
-  // konwingValue: string = '';
+  email = EMAIL_OFFICIAL
 
   changeCompagnyValue(event: KeyboardEvent) {
     const inputElement = event.target as HTMLInputElement;
