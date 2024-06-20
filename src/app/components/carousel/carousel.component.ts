@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent {
+
   constructor() {
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    }, 3000);
+    }, 6000);
   }
 
   images = [

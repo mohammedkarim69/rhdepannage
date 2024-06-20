@@ -20,7 +20,7 @@ export const pictureList: picture[] = [
   },
 
   {
-    image: '../assets/images/photocamionboue.jpg',
+    image: '../assets/images/photo-coccinnelle.jpg',
     alt: 'camion marron bloqué dans la boue ',
   },
   {
