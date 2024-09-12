@@ -78,7 +78,7 @@
 
 .mainmenu {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - $mobile-header);
   width: 100vw;
   flex-direction: column;
   justify-content: space-around;
