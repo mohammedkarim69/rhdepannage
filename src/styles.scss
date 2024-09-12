@@ -278,6 +278,11 @@ p {
   box-shadow: 0px 2px 8px $black;
   margin: 5vh;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
 // Breackpoint list
 // Mobiles vers Tablettes :
 @media screen and (min-width: 768px) {

@@ -8,14 +8,13 @@ import { Component,HostListener } from '@angular/core';
 export class ArrowUpComponent {
   scrollPosition = 0;
 
-
-  scrollToTop(){
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
   @HostListener('window:scroll', [])
     onScroll(): void {
       this.scrollPosition = window.pageYOffset  ||document.documentElement.scrollTop || document.body.scrollTop || 0;
-      console.log(this.scrollPosition);
     }
+
+  scrollToTop(): void {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 

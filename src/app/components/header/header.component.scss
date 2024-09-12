@@ -14,7 +14,7 @@
 .container {
   display: flex;
   height: calc($mobile-header / 2);
-  width: 82vw;
+  width: 100vw;
   margin: $half-margin;
   align-items: center;
 }
@@ -55,8 +55,8 @@
   backdrop-filter: blur(2px);
   position: fixed;
   top: 0;
-  right: -70vw;
-  width: 70%;
+  right: -92vw;
+  width: 100%;
   transition: right 1s;
 }
 .invisible {
@@ -79,6 +79,7 @@
 .mainmenu {
   display: flex;
   height: 100vh;
+  width: 100vw;
   flex-direction: column;
   justify-content: space-around;
   background-color: $black;
@@ -138,6 +139,7 @@
 
   .title {
     padding-left: 0;
+    white-space: nowrap;
   }
 
   .navdesktop {
@@ -148,7 +150,7 @@
 
   .mainmenus {
     flex-direction: row;
-    width: 80vw;
+    width: 100%;
     justify-content: space-around;
     font-size: 15px;
   }
