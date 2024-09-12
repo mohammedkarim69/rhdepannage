@@ -1,7 +1,7 @@
 import { Menu } from './interfaces/Menu';
 
 export const URLAPI = 'http://localhost:8080/api';
-export const EMAIL_OFFICIAL = 'info@RHDepannage';
+export const EMAIL_OFFICIAL = 'contact@rhdepannage.fr';
 export const NAVBAR_MENU: Menu[] = [
   {
     name: 'Accueil',
@@ -257,3 +257,4 @@ export const CITY_LIST: Menu[] = [
 ];
 export const SENDGRID_API_KEY =
   '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';
+export const TEAM_DEV_PHONE = "0590-1963-59"

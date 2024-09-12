@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { EMAIL_OFFICIAL } from 'src/app/shared/variables';
 
@@ -11,7 +10,6 @@ export class ContactFormComponent {
   isFormClicked: boolean = false;
   hasErrors: boolean = false;
   isLoaderVisible: boolean = false;
-
   compagnyValue: string = '';
   lastnameValue: string = '';
   firstnameValue: string = '';

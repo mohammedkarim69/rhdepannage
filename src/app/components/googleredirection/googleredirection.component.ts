@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, inject } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, inject } from '@angular/core';
 import { GoogleReviews, Review } from 'src/app/shared/interfaces/google';
 
 enum StarRating {
@@ -17,7 +16,7 @@ enum StarRating {
   templateUrl: './googleredirection.component.html',
   styleUrls: ['./googleredirection.component.scss']
 })
-export class GoogleredirectionComponent implements OnInit {
+export class GoogleredirectionComponent {
 
   private http = inject(HttpClient);
 
@@ -95,16 +94,6 @@ Si besoin je referai appel à eux.`,
     "nextPageToken": ""
   }
 
-  ngOnInit(): void {
-      // this.getGoogleReviews().subscribe({
-      //   next: (data) => {this.googleAvisList = data
-      //     console.log(data)
-      //     console.log("coucou")
-      //   },
-      //   error: (err) => console.log(err)
-      // })
-  }
-
   getNumberStarSolid(stars: StarRating): number[] {
     switch (stars) {
       case 'Une étoile sur cinq': 
@@ -150,13 +139,13 @@ Si besoin je referai appel à eux.`,
 
 
   // getGoogleReviews(): Observable<any> {
-  protected getGoogleReviews(): Observable<GoogleReviews> {
-    // return this.http.get<GoogleReviews>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews`)
-    return this.http.get<GoogleReviews>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews`)
+  // getGoogleReviews(): Observable<GoogleReviews> {
+  //   // return this.http.get<GoogleReviews>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews`)
+  //   return this.http.get<GoogleReviews>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews`)
 
-  }
+  // }
 
-  protected getOneReview(reviewId : number): Observable<Review> {
-    return this.http.get<Review>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews/` + reviewId)
-  }
+  // getOneReview(reviewId : number): Observable<Review> {
+  //   return this.http.get<Review>(`https://mybusiness.googleapis.com/v4/accounts/${this.googleAccountId}/locations/${this.googleLocationId}/reviews/` + reviewId)
+  // }
 }
