@@ -55,12 +55,12 @@
   backdrop-filter: blur(2px);
   position: fixed;
   top: 0;
-  right: -92vw;
+  right: -100vw;
   width: 100%;
   transition: right 1s;
 }
 .invisible {
-  right: 0vh;
+  right: 0vw;
 }
 .navbarmobile i {
   z-index: 9999;
