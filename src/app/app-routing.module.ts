@@ -6,7 +6,6 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
 import { SiteMapComponent } from './pages/site-map/site-map.component';
 import { PrivatePolicyComponent } from './pages/private-policy/private-policy.component';
 
@@ -25,7 +24,6 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'gallerie-photos', component: GalleryComponent },
   { path: 'services', component: ServicesComponent },
-  { path: 'formulaire-envoye', component: FormRedirectComponent },
   { path: 'page-404', component: Page404Component },
   { path: 'accueil/:city', component: HomeComponent },
   { path: 'plan-du-site', component: SiteMapComponent },

@@ -28,7 +28,6 @@ import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { H1ComponentComponent } from './components/h1-component/h1-component.component';
-import { FormRedirectComponent } from './pages/form-redirect/form-redirect.component';
 import { OurvaluesComponent } from './ourvalues/ourvalues.component';
 import { OurserviceComponent } from './ourservice/ourservice.component';
 import { LoaderComponent } from './components/loader/loader.component';
@@ -40,11 +39,6 @@ import { InterventionComponent } from './components/intervention/intervention.co
 import { GoogleredirectionComponent } from './components/googleredirection/googleredirection.component';
 import { PrivatePolicyComponent } from './pages/private-policy/private-policy.component';
 import { ArrowUpComponent } from './components/arrow-up/arrow-up.component';
-
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -62,7 +56,6 @@ import { ArrowUpComponent } from './components/arrow-up/arrow-up.component';
     ContactFormComponent,
     HeadbandBlackYellowComponent,
     H1ComponentComponent,
-    FormRedirectComponent,
     OurvaluesComponent,
     OurserviceComponent,
     LoaderComponent,
