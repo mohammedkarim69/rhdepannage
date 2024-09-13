@@ -1,0 +1,10 @@
+# Utiliser index.html comme page par défaut
+DirectoryIndex index.html
+
+# Rediriger toutes les routes Angular vers index.html
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
